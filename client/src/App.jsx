@@ -14,7 +14,7 @@ import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
 import QuotePage from "./pages/QuotePage";
-import AI from "./pages/Ai";
+import AI from "./pages/AI";
 import CustomAI from "./pages/CustomAI";
 
 
