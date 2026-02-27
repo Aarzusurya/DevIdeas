@@ -1,0 +1,134 @@
+.footer {
+  background: transparent;   /* Transparent */
+  color: #fff;
+  padding: 80px 0 30px 0;
+  backdrop-filter: blur(6px);  /* subtle glass feel */
+}
+
+/* Container */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Columns */
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Underline effect on heading */
+.footer-column h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 5px;
+}
+
+/* List */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-column ul li:hover {
+  color: #0d6efd;/* gold hover */
+  transform: translateX(6px);
+}
+
+/* Contact Block */
+.contact-block {
+  margin-bottom: 18px;
+}
+
+.contact-block h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-block p {
+  font-size: 14px;
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+.contact-block p:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+/* Social Icons */
+.footer-social {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2); /* transparent circle */
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #fff;
+  color: #0d6efd;
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Bottom Text */
+.footer-bottom {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 14px;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+
+  .footer-column h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

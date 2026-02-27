@@ -1,0 +1,113 @@
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+  background-color: #f9fafb; /* soft light background */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap; /* responsive for smaller screens */
+}
+
+/* Hero Text Animations */
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s forwards;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #1f2937; /* dark text */
+}
+
+.hero-text p {
+  color: #4b5563; /* muted text */
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Hero Button */
+.btn {
+  background: #0d6efd;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #0956c3;
+  transform: translateY(-3px);
+}
+
+/* Hero Image Animations */
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s forwards;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes for animations */
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text {
+    animation: fadeInUp 1s forwards;
+  }
+
+  .hero-image {
+    animation: fadeInUp 1s forwards;
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

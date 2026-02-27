@@ -1,0 +1,164 @@
+/* About Section */
+.about-section {
+  padding: 100px 0;
+  background-color: #f9fafb; /* soft white background */
+  color: #1f2937;
+  overflow: hidden;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* Top & Bottom Sections */
+.about-top, .about-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Text Block */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideInLeft 1s forwards;
+}
+
+.about-bottom .about-text {
+  transform: translateX(60px);
+  animation: slideInRight 1s forwards;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000; /* Black heading */
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  color: #4b5563;
+}
+
+.about-text .btn {
+  margin-top: 15px;
+  background: #0d6efd; /* Button color */
+  color: white;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-text .btn:hover {
+  background: #0956c3;
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Image Block */
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideInRight 1s forwards;
+}
+
+.about-top .about-image {
+  transform: translateX(60px);
+  animation: slideInRight 1s forwards;
+}
+
+.about-bottom .about-image {
+  transform: translateX(-60px);
+  animation: slideInLeft 1s forwards;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.07) translateY(-5px);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.15);
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-top, .about-bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-image img {
+    max-width: 80%;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
+  .about-text .btn {
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-text h2 {
+    font-size: 26px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .about-text .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

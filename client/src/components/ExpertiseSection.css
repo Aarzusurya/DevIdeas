@@ -1,0 +1,131 @@
+.expertise-section {
+  padding: 110px 0;
+  background: #f8fbff;
+  color: #1f2937;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  color: #000;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #0d6efd;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 10px;
+}
+
+.expertise-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.expertise-card {
+  flex: 1 1 calc(25% - 30px);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 45px 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* 🔥 Card Hover */
+.expertise-card:hover {
+  background: #0d6efd;
+  transform: translateY(-12px);
+  box-shadow: 0 30px 70px rgba(13,110,253,0.35);
+}
+
+/* ✅ Bigger & Attractive Image */
+.card-img {
+  background: linear-gradient(135deg, #eaf2ff, #f5f9ff);
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Title */
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0d6efd;
+  transition: color 0.3s ease;
+}
+
+/* Description */
+.card-desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 25px;
+  transition: color 0.3s ease;
+}
+
+/* 🔥 White text on hover */
+.expertise-card:hover .card-title,
+.expertise-card:hover .card-desc {
+  color: #ffffff;
+}
+
+/* Button */
+.read-more {
+  background: #0d6efd;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expertise-card:hover .read-more {
+  background: #ffffff;
+  color: #0d6efd;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .expertise-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 640px) {
+  .expertise-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .expertise-card {
+    flex: 1 1 100%;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
