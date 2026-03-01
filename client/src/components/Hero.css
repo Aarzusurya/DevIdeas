@@ -37,13 +37,13 @@
 }
 
 .nav-links li a {
-  text-decoration: none;   /* remove underline */
-  color: inherit;          /* keep same text color */
-  cursor: pointer;         /* show pointer */
+  text-decoration: none;   
+  color: inherit;          
+  cursor: pointer;         
 }
 
 .nav-links li a:hover {
-  color: #ff6b6b;  /* optional hover effect */
+  color: blue; 
 }
 /* Hero Button */
 .btn {
