@@ -13,7 +13,7 @@
 }
 
 /* Hero Text Animations */
-.hero-text {
+.hero-text1 {
   flex: 1;
   min-width: 280px;
   opacity: 0;
@@ -21,7 +21,7 @@
   animation: fadeInLeft 1s forwards;
 }
 
-.hero-text h1 {
+.hero-text1 h1 {
   font-size: 38px;
   line-height: 1.3;
   margin-bottom: 20px;
@@ -29,7 +29,7 @@
 
 }
 
-.hero-text p {
+.hero-text1 p {
     color:black;
  /* muted text */
   margin-bottom: 30px;
@@ -97,7 +97,7 @@
     text-align: center;
   }
 
-  .hero-text {
+  .hero-text1 {
     animation: fadeInUp 1s forwards;
   }
 
