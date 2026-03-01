@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./DifferenceSection.css";
 
 function DifferenceSection() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/quote");   // 👈 QuotePage ka route
+  };
+
   return (
     <section className="difference-section">
       <div className="difference-container">
@@ -16,7 +24,10 @@ function DifferenceSection() {
           compatible with all systems and platforms. We guarantee the credibility of our work through the satisfaction achieved by our previous clients.
         </p>
 
-        <button className="difference-btn">
+        <button 
+          className="difference-btn"
+          onClick={handleClick}
+        >
           Learn more about us
         </button>
 

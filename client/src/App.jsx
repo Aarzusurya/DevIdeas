@@ -22,6 +22,8 @@ import FlutterAppDevelopment from "./pages/FlutterAppDevelopment";
 import WordpressDevelopment from "./pages/WordpressDevelopment";
 import LaravelWebDevelopment from "./pages/LaravelWebDevelopment";
 import ReactNativeAppDevelopment from "./pages/ReactNativeAppDevelopment";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function HomePage() {
   return (
@@ -42,6 +44,7 @@ function HomePage() {
 function App() {
   return (
     <Router>
+       <ScrollToTop /> 
       <Navbar />
 
       <Routes>

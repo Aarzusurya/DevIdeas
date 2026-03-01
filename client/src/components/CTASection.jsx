@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./CTASection.css";
 import { FaPhoneAlt } from "react-icons/fa";
 
 function CTASection() {
+
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/quote");   // 👈 QuotePage ka route
+  };
+
   return (
     <section className="cta-section">
       <div className="cta-container">
@@ -23,7 +31,12 @@ function CTASection() {
             <span className="phone-number">+91 96876 90810</span>
           </div>
 
-          <button className="cta-btn">Contact Us</button>
+          <button 
+            className="cta-btn"
+            onClick={handleContactClick}
+          >
+            Contact Us
+          </button>
 
         </div>
 
