@@ -32,7 +32,7 @@ function ContactSection() {
           <p><strong>Email:</strong> InfoTechVertex@gmail.com
           </p>
 
-          <p className="address">
+          <p >
             A/8 Shakti Vijay Society, Near Vijay Park BRTS Bus Stand,  
             N.H. 8, Krishnanagar, Ahmedabad-382345
           </p>
