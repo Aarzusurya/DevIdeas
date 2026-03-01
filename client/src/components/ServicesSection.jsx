@@ -35,36 +35,7 @@ function ServicesSection() {
         "https://images.unsplash.com/photo-1504639725590-34d0984388bd"
       ]
     },
-    {
-      title: "WordPress Development",
-      slug: "wordpress-development",
-      desc: "We have a good team of WordPress developers.",
-      images: [
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
-        "https://images.unsplash.com/photo-1484417894907-623942c8ee29"
-      ]
-    },
-    {
-      title: "Laravel Web Development",
-      slug: "laravel-web-development",
-      desc: "We have great skills in Laravel Framework.",
-      images: [
-        "https://images.unsplash.com/photo-1505685296765-3a2736de412f",
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
-      ]
-    },
-    {
-      title: "React Native App Development",
-      slug: "react-native-app-development",
-      desc: "We are experts in React Native.",
-      images: [
-        "https://images.unsplash.com/photo-1559028012-481c04fa702d",
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-        "https://images.unsplash.com/photo-1492724441997-5dc865305da7"
-      ]
-    }
+   
   ];
 
   return (
