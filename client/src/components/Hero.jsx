@@ -9,7 +9,7 @@ function Hero() {
       <div className="container hero-content">
 
         {/* Hero Text */}
-        <div className="hero-text">
+        <div className="hero-text1">
           <h1>
             Best Mobile App Development
             <br />
