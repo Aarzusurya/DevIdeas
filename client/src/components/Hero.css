@@ -56,7 +56,7 @@
 /* Hero Image Animations */
 .hero-image {
   flex: 1;
-  min-width: 280px;
+  /* min-width: 280px; */
   opacity: 0;
   transform: translateX(50px);
   animation: slideInRight 1s forwards;
