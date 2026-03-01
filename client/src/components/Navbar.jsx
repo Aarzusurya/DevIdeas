@@ -20,11 +20,21 @@ function Navbar() {
 
         {/* Nav Links */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li onClick={handleCloseMenu}>Company</li>
-          <li onClick={handleCloseMenu}>Services</li>
-          <li onClick={handleCloseMenu}>Portfolio</li>
-          <li onClick={handleCloseMenu}>Case Studies</li>
-          <li onClick={handleCloseMenu}>Blog</li>
+           <li>
+    <Link to="/" onClick={handleCloseMenu}>Company</Link>
+  </li>
+  <li>
+    <Link to="/" onClick={handleCloseMenu}>Services</Link>
+  </li>
+  <li>
+    <Link to="/" onClick={handleCloseMenu}>Portfolio</Link>
+  </li>
+  <li>
+    <Link to="/" onClick={handleCloseMenu}>Case Studies</Link>
+  </li>
+  <li>
+    <Link to="/" onClick={handleCloseMenu}>Blog</Link>
+  </li>
 
           {/* Mobile Button */}
           <li className="mobile-btn" onClick={handleCloseMenu}>
