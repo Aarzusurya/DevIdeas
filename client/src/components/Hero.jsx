@@ -23,7 +23,7 @@ function Hero() {
           </p>
 
           {/*  Corrected Button */}
-          <Link to="/quote" className="btn">
+          <Link to="/quote" className="btn1">
             Get a Quote
           </Link>
         </div>
