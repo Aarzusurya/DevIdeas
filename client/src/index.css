@@ -118,6 +118,10 @@ body {
   transition: 0.3s;
 }
 
+.mobile-button{
+  color:white;
+}
+
 /* Animation */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
