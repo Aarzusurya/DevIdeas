@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./ServicesSection.css";
+import { useNavigate } from "react-router-dom";
 
 function ServicesSection() {
 
   const services = [
     {
       title: "Android App Development",
+      slug: "android-app-development",
       desc: "We develop creative, valuable ideas and focus on providing an excellent user experience.",
       images: [
         "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb",
@@ -15,6 +17,7 @@ function ServicesSection() {
     },
     {
       title: "iOS App Development",
+      slug: "ios-app-development",
       desc: "Our team is capable of creating iOS compatible and efficient iOS apps.",
       images: [
         "https://images.unsplash.com/photo-1510557880182-3d4d3cba35c7",
@@ -24,6 +27,7 @@ function ServicesSection() {
     },
     {
       title: "Flutter App Development",
+      slug: "flutter-app-development",
       desc: "Flutter is a popular tool for building high-quality cross-platform mobile apps.",
       images: [
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
@@ -33,6 +37,7 @@ function ServicesSection() {
     },
     {
       title: "WordPress Development",
+      slug: "wordpress-development",
       desc: "We have a good team of WordPress developers.",
       images: [
         "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
@@ -42,6 +47,7 @@ function ServicesSection() {
     },
     {
       title: "Laravel Web Development",
+      slug: "laravel-web-development",
       desc: "We have great skills in Laravel Framework.",
       images: [
         "https://images.unsplash.com/photo-1505685296765-3a2736de412f",
@@ -51,6 +57,7 @@ function ServicesSection() {
     },
     {
       title: "React Native App Development",
+      slug: "react-native-app-development",
       desc: "We are experts in React Native.",
       images: [
         "https://images.unsplash.com/photo-1559028012-481c04fa702d",
@@ -88,6 +95,7 @@ function ServicesSection() {
 function ServiceCard({ service }) {
 
   const [current, setCurrent] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -99,6 +107,10 @@ function ServiceCard({ service }) {
     return () => clearInterval(interval);
   }, [service.images.length]);
 
+  const handleReadMore = () => {
+    navigate(`/${service.slug}`);
+  };
+
   return (
     <div className="srv-card">
 
@@ -109,7 +121,9 @@ function ServiceCard({ service }) {
       <h3 className="srv-title">{service.title}</h3>
       <p className="srv-desc">{service.desc}</p>
 
-      <button className="srv-btn">Read More</button>
+      <button className="srv-btn" onClick={handleReadMore}>
+        Read More
+      </button>
 
     </div>
   );

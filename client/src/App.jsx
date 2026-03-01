@@ -16,7 +16,12 @@ import Footer from "./components/Footer";
 import QuotePage from "./pages/QuotePage";
 import AI from "./pages/AI";
 import CustomAI from "./pages/CustomAI";
-
+import AndroidAppDevelopment from "./pages/AndroidAppDevelopment";
+import IOSAppDevelopment from "./pages/IOSAppDevelopment";
+import FlutterAppDevelopment from "./pages/FlutterAppDevelopment";
+import WordpressDevelopment from "./pages/WordpressDevelopment";
+import LaravelWebDevelopment from "./pages/LaravelWebDevelopment";
+import ReactNativeAppDevelopment from "./pages/ReactNativeAppDevelopment";
 
 function HomePage() {
   return (
@@ -40,19 +45,44 @@ function App() {
       <Navbar />
 
       <Routes>
-        {/* Home Page */}
+        {/* Home */}
         <Route path="/" element={<HomePage />} />
 
-        {/* Quote Page */}
+        {/* Quote */}
         <Route path="/quote" element={<QuotePage />} />
 
-        {/* About Page */}
+        {/* AI Pages */}
         <Route path="/ai" element={<AI />} />
-
         <Route path="/customai" element={<CustomAI />} />
 
+        {/* App Development Pages */}
+        <Route
+          path="/android-app-development"
+          element={<AndroidAppDevelopment />}
+        />
+        <Route
+          path="/ios-app-development"
+          element={<IOSAppDevelopment />}
+        />
+        <Route
+          path="/flutter-app-development"
+          element={<FlutterAppDevelopment />}
+        />
+        <Route
+          path="/wordpress-development"
+          element={<WordpressDevelopment />}
+        />
+        <Route
+          path="/laravel-web-development"
+          element={<LaravelWebDevelopment />}
+        />
+        <Route
+          path="/react-native-app-development"
+          element={<ReactNativeAppDevelopment />}
+        />
       </Routes>
-      <CTASection/>
+
+      <CTASection />
       <Footer />
     </Router>
   );

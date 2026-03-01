@@ -1,0 +1,614 @@
+/* ================= GLOBAL ================= */
+
+.android-page {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.android-hero {
+  background-color: #0d6efd;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.android-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Image */
+
+.hero-image {
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto 40px auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  transition: 0.4s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+/* Hero Text */
+
+.android-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.android-hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.android-about {
+  background-color: #f8f9fa;  /* Navbar type light color */
+  padding: 100px 20px;
+  color: #333;
+}
+
+.android-about h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.android-about h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.android-about p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .android-hero h1 {
+    font-size: 36px;
+  }
+
+  .android-about h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .android-hero {
+    padding: 80px 20px;
+  }
+
+  .android-hero h1 {
+    font-size: 28px;
+  }
+
+  .android-hero p {
+    font-size: 16px;
+  }
+
+  .android-about {
+    padding: 70px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .android-hero h1 {
+    font-size: 22px;
+  }
+
+  .android-about h2 {
+    font-size: 22px;
+  }
+
+  .android-about p {
+    font-size: 14px;
+  }
+}
+
+/* ================= CTA SECTION ================= */
+
+.android-cta {
+  background: linear-gradient(135deg, #1d5fd1, #0d6efd);
+  padding: 70px 20px;
+  color: white;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-left h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cta-left p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.cta-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.phone-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: #0d6efd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+.phone-icon:hover {
+  transform: scale(1.1);
+}
+
+.phone-number {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cta-btn {
+  padding: 12px 28px;
+  background: white;
+  color: #0d6efd;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+  transform: translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .cta-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .cta-right {
+    justify-content: center;
+  }
+
+  .cta-left h2 {
+    font-size: 28px;
+  }
+
+  .phone-number {
+    font-size: 18px;
+  }
+}
+
+
+/* ================= SOLID SECTION ================= */
+
+.android-solid {
+  background: #f4f7fb;
+  padding: 110px 20px;
+  text-align: center;
+}
+
+.solid-heading {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.solid-subtext {
+  max-width: 850px;
+  margin: 0 auto 70px auto;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #555;
+}
+
+/* Grid Layout */
+
+.solid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* Card Style */
+
+.solid-card {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  text-align: left;
+  border-left: 5px solid #0d6efd;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.solid-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.solid-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Hover Effect */
+
+.solid-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border-left: 5px solid #0047c2;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .solid-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .solid-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solid-heading {
+    font-size: 28px;
+  }
+
+  .solid-subtext {
+    font-size: 15px;
+  }
+}
+
+/* ================= WHY CHOOSE SECTION ================= */
+
+.android-why {
+  background: #ffffff;
+  padding: 110px 20px;
+  text-align: center;
+}
+
+.why-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.why-subtext {
+  max-width: 820px;
+  margin: 0 auto 60px auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Grid */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Cards */
+
+.why-card {
+  background: #f8f9fa;
+  padding: 35px 25px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.why-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.why-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Hover */
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  background: #0d6efd;
+  color: white;
+}
+
+.why-card:hover p {
+  color: rgba(255,255,255,0.9);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-heading {
+    font-size: 26px;
+  }
+
+  .why-subtext {
+    font-size: 15px;
+  }
+}
+
+.android-cta {
+  background: linear-gradient(135deg, #1d5fd1, #0d6efd);
+  padding: 70px 20px;
+  color: white;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-left h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cta-left p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.cta-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.phone-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: #0d6efd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+.phone-icon:hover {
+  transform: scale(1.1);
+}
+
+.phone-number {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cta-btn {
+  padding: 12px 28px;
+  background: white;
+  color: #0d6efd;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+  transform: translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .cta-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .cta-right {
+    justify-content: center;
+  }
+
+  .cta-left h2 {
+    font-size: 28px;
+  }
+
+  .phone-number {
+    font-size: 18px;
+  }
+}
+
+/* ================= PORTFOLIO SECTION ================= */
+
+/* ================= PORTFOLIO SECTION ================= */
+
+.android-portfolio {
+  background: #f4f7fb;
+  padding: 110px 20px;
+}
+
+.portfolio-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  color: black;
+}
+
+/* Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.portfolio-card {
+  background: #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+/* Top Area */
+.portfolio-top {
+  position: relative;
+  padding: 60px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Colors */
+.pink-bg {
+  background: linear-gradient(135deg, #ff4da6, #ff80bf);
+}
+
+.green-bg {
+  background: linear-gradient(135deg, #1b8f3c, #4caf50);
+}
+
+.blue-bg {
+  background: linear-gradient(135deg, #2367d3, #5da9ff);
+}
+
+/* Phone Mockup */
+.phone-mockup {
+  width: 180px;
+  height: 320px;
+  background: #111;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.phone-mockup img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* App Icon */
+.app-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.app-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Content */
+.portfolio-content {
+  padding: 35px 30px 45px;
+  text-align: center;
+}
+
+.portfolio-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2367d3;
+}
+
+.portfolio-content p {
+  font-size: 15px;
+  color: black;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-heading {
+    text-align: center;
+    font-size: 26px;
+  }
+}
