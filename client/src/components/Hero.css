@@ -46,7 +46,7 @@
   color: blue; 
 }
 /* Hero Button */
-.btn {
+.btn1 {
   background: #0d6efd;
   color: white;
   padding: 12px 28px;
@@ -57,7 +57,7 @@
   font-weight: 500;
 }
 
-.btn:hover {
+.btn1:hover {
   background: #0956c3;
   transform: translateY(-3px);
 }
