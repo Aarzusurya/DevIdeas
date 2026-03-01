@@ -54,9 +54,9 @@
 }
 
 /* Hero Image Animations */
-.hero-image {
+.hero-image1 {
   flex: 1;
-  /* min-width: 280px; */
+  min-width: 280px;
   opacity: 0;
   transform: translateX(50px);
   animation: slideInRight 1s forwards;
@@ -64,14 +64,14 @@
   justify-content: center;
 }
 
-.hero-image img {
+.hero-image1 img {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
-.hero-image img:hover {
+.hero-image1 img:hover {
   transform: scale(1.05);
 }
 
@@ -101,7 +101,7 @@
     animation: fadeInUp 1s forwards;
   }
 
-  .hero-image {
+  .hero-image1 {
     animation: fadeInUp 1s forwards;
     margin-bottom: 30px;
   }
