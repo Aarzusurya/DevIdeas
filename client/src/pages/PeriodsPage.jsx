@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./PeriodsPage.css";
+import "./periodsPage.css";
 import { FaCalendarAlt, FaHeartbeat, FaBaby, FaNotesMedical } from "react-icons/fa";
 
 function PeriodsPage() {
