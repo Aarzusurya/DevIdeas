@@ -19,12 +19,15 @@ import CustomAI from "./pages/CustomAI";
 import AndroidAppDevelopment from "./pages/AndroidAppDevelopment";
 import IOSAppDevelopment from "./pages/IOSAppDevelopment";
 import FlutterAppDevelopment from "./pages/FlutterAppDevelopment";
-import WordpressDevelopment from "./pages/WordpressDevelopment";
-import LaravelWebDevelopment from "./pages/LaravelWebDevelopment";
-import ReactNativeAppDevelopment from "./pages/ReactNativeAppDevelopment";
 import ScrollToTop from "./components/ScrollToTop";
 
+import AppsPortfolio from "./pages/AppsPortfolio";
+import WebsitesPortfolio from "./pages/WebsitesPortfolio";
 
+import MultiSocial from "./pages/MultiSocial";
+import PeriodsPage from "./pages/PeriodsPage";
+import PlayPage from "./pages/PlayPage";
+import BodyPage from "./pages/Bodypage";
 function HomePage() {
   return (
     <>
@@ -44,19 +47,32 @@ function HomePage() {
 function App() {
   return (
     <Router>
-       <ScrollToTop /> 
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
         {/* Home */}
         <Route path="/" element={<HomePage />} />
 
+        {/* Services Page (NEW) */}
+        <Route path="/services" element={<ExpertiseSection />} />
+
         {/* Quote */}
         <Route path="/quote" element={<QuotePage />} />
+
+        <Route path="/portfolio/apps" element={<AppsPortfolio />} />
+<Route path="/portfolio/websites" element={<WebsitesPortfolio />} />
+
+<Route path="/multi-social" element={<MultiSocial />} />
+<Route path="/periods" element={<PeriodsPage />} />
+<Route path="/play-diary" element={<PlayPage />} />
+<Route path="/body-care-love" element={<BodyPage />} />
 
         {/* AI Pages */}
         <Route path="/ai" element={<AI />} />
         <Route path="/customai" element={<CustomAI />} />
+
+        <Route path="/periods" element={<PeriodsPage />} />
 
         {/* App Development Pages */}
         <Route
@@ -71,18 +87,7 @@ function App() {
           path="/flutter-app-development"
           element={<FlutterAppDevelopment />}
         />
-        <Route
-          path="/wordpress-development"
-          element={<WordpressDevelopment />}
-        />
-        <Route
-          path="/laravel-web-development"
-          element={<LaravelWebDevelopment />}
-        />
-        <Route
-          path="/react-native-app-development"
-          element={<ReactNativeAppDevelopment />}
-        />
+
       </Routes>
 
       <CTASection />

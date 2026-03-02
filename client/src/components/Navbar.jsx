@@ -1,48 +1,124 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [portfolioOpen, setPortfolioOpen] = useState(false);
+  const location = useLocation();
 
   const handleCloseMenu = () => {
     setMenuOpen(false);
+    setPortfolioOpen(false);
   };
+
+  // 🔥 Services active logic
+  const isServicesActive =
+    location.pathname === "/services" ||
+    location.pathname === "/ai" ||
+    location.pathname === "/customai";
+
+  // 🔥 Portfolio active logic
+  const isPortfolioActive =
+    location.pathname.startsWith("/portfolio");
 
   return (
     <nav className="navbar">
       <div className="container nav-content">
 
         {/* Logo */}
-        <Link to="/" className="logo" onClick={handleCloseMenu}>
+        <NavLink to="/" className="logo" onClick={handleCloseMenu}>
           <span style={{ fontSize: "32px" }}>D</span>ev
           <span style={{ fontSize: "32px" }}>I</span>deas
-        </Link>
+        </NavLink>
 
         {/* Nav Links */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-           <li>
-    <Link to="/" onClick={handleCloseMenu}>Company</Link>
-  </li>
-  <li>
-    <Link to="/" onClick={handleCloseMenu}>Services</Link>
-  </li>
-  <li>
-    <Link to="/" onClick={handleCloseMenu}>Portfolio</Link>
-  </li>
-  <li>
-    <Link to="/" onClick={handleCloseMenu}>Case Studies</Link>
-  </li>
-  <li>
-    <Link to="/" onClick={handleCloseMenu}>Blog</Link>
-  </li>
+
+          <li>
+            <NavLink
+              to="/"
+              onClick={handleCloseMenu}
+              className={({ isActive }) =>
+                isActive ? "active-link" : ""
+              }
+            >
+              Company
+            </NavLink>
+          </li>
+
+          {/* Services */}
+          <li>
+            <NavLink
+              to="/services"
+              onClick={handleCloseMenu}
+              className={isServicesActive ? "active-link" : ""}
+            >
+              Services
+            </NavLink>
+          </li>
+
+          {/* Portfolio Dropdown */}
+          <li
+            className="dropdown"
+            onClick={() => setPortfolioOpen(!portfolioOpen)}
+          >
+            <span className={isPortfolioActive ? "active-link" : ""}>
+              Portfolio ▾
+            </span>
+
+            <ul className={`dropdown-menu ${portfolioOpen ? "show" : ""}`}>
+              <li>
+                <NavLink
+                  to="/portfolio/apps"
+                  onClick={handleCloseMenu}
+                >
+                  Our Apps Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/portfolio/websites"
+                  onClick={handleCloseMenu}
+                >
+                  Our Website Portfolio
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <NavLink
+              to="/case-studies"
+              onClick={handleCloseMenu}
+              className={({ isActive }) =>
+                isActive ? "active-link" : ""
+              }
+            >
+              Case Studies
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/blog"
+              onClick={handleCloseMenu}
+              className={({ isActive }) =>
+                isActive ? "active-link" : ""
+              }
+            >
+              Blog
+            </NavLink>
+          </li>
 
           {/* Mobile Button */}
           <li className="mobile-btn" onClick={handleCloseMenu}>
-            <Link to="/quote" className="btn">Get in Touch</Link>
+            <NavLink to="/quote" className="btn">
+              Get in Touch
+            </NavLink>
           </li>
+
         </ul>
 
-        
         {/* Hamburger */}
         <div
           className={`hamburger ${menuOpen ? "open" : ""}`}
