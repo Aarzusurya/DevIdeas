@@ -1,0 +1,108 @@
+.life-container{
+padding:60px 10%;
+background:#0d6efd;
+color:white;
+min-height:100vh;
+}
+
+.life-title{
+font-size:50px;
+font-weight:700;
+text-align:center;
+margin-bottom:50px;
+color: white;
+}
+
+.life-section{
+margin-bottom:60px;
+}
+
+.life-section h2{
+font-size:28px;
+margin-bottom:15px;
+color:white;
+}
+
+.life-section p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:15px;
+color:#e5e7eb;
+}
+
+/* IMAGE GALLERY */
+
+.life-gallery{
+margin:40px 0;
+}
+
+.life-scroll{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.life-scroll img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:12px;
+transition:0.3s;
+}
+
+.life-scroll img:hover{
+transform:scale(1.05);
+}
+
+/* PROCESS LIST */
+
+.life-list{
+line-height:1.8;
+padding-left:20px;
+}
+
+/* TECHNOLOGY STACK */
+
+.life-stack{
+text-align:center;
+margin-top:80px;
+}
+
+.life-icons{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.life-card img{
+width:60px;
+margin-bottom:10px;
+}
+
+.life-card{
+transition:0.3s;
+}
+
+.life-card:hover{
+transform:scale(1.1);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.life-title{
+font-size:30px;
+}
+
+.life-scroll{
+grid-template-columns:1fr;
+}
+
+.life-scroll img{
+height:180px;
+}
+
+}

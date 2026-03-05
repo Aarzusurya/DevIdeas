@@ -4,13 +4,13 @@
 
 /* HERO */
 
-.period-hero {
+.period-pain {
   background: linear-gradient(135deg, #ff6b9d, #ff8fab);
   color: white;
   padding: 100px 8%;
 }
 
-.period-hero-content {
+.period-pain-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +118,7 @@
   flex-wrap: wrap;
 }
 
-.nav-btn {
+.navu-btn {
   padding: 12px 28px;
   border: none;
   border-radius: 8px;
@@ -129,18 +129,24 @@
   transition: 0.3s ease;
 }
 
-.nav-btn:hover {
+.navu-btn:hover {
   transform: translateY(-4px);
+    background: black;
+
 }
 
-.nav-btn.secondary {
+.navu-btn.secondary {
   background: linear-gradient(135deg, #0d6efd, #0d6efd);
+}
+
+.navu-btn.secondary:hover {
+  background: black;
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-  .period-hero-content {
+  .period-pain-content {
     flex-direction: column;
     text-align: center;
   }

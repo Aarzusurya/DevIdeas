@@ -7,7 +7,7 @@ function DifferenceSection() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/quote");   // 👈 QuotePage ka route
+    navigate("/about");   // 👈 QuotePage ka route
   };
 
   return (
@@ -19,7 +19,7 @@ function DifferenceSection() {
         </h2>
 
         <p className="difference-text">
-          TechVertex aims to rise to the top and become the best web design and mobile app development company based in Ahmedabad, India. 
+          AppIdeas aims to rise to the top and become the best web design and mobile app development company based in Ahmedabad, India. 
           We prioritize our client’s demands and consumer’s needs and provide efficient, attractive, and valuable cross-platform app development 
           compatible with all systems and platforms. We guarantee the credibility of our work through the satisfaction achieved by our previous clients.
         </p>

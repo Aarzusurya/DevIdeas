@@ -1,0 +1,148 @@
+.fitag-container{
+padding:60px 10%;
+background:#0d6efd;
+color:white;
+min-height:100vh;
+}
+
+.fitag-title{
+font-size:50px;
+font-weight:700;
+text-align:center;
+margin-bottom:50px;
+color: white;
+}
+
+.fitag-section{
+margin-bottom:60px;
+}
+
+.fitag-section h2{
+font-size:28px;
+margin-bottom:15px;
+color:white;
+}
+
+.fitag-section p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:15px;
+color:#e5e7eb;
+}
+
+
+/* PROCESS LIST */
+
+.process-list{
+padding-left:20px;
+}
+
+.process-list li{
+margin-bottom:10px;
+font-size:17px;
+line-height:1.6;
+}
+
+
+
+/* IMAGE GALLERY */
+
+.fitag-gallery{
+margin:60px 0;
+}
+
+.gallery-scroll{
+display:flex;
+gap:25px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding-bottom:20px;
+}
+
+.gallery-scroll::-webkit-scrollbar{
+height:8px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb{
+background:white;
+border-radius:10px;
+}
+
+.gallery-scroll img{
+width:350px;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:0.4s;
+cursor:pointer;
+}
+
+.gallery-scroll img:hover{
+transform:scale(1.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* TECH STACK */
+
+.tech-stack{
+margin-top:80px;
+text-align:center;
+}
+
+.tech-stack h2{
+font-size:28px;
+margin-bottom:40px;
+color:white;
+}
+
+.tech-icons{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.tech-card{
+text-align:center;
+transition:0.3s;
+}
+
+.tech-card img{
+width:70px;
+height:70px;
+margin-bottom:10px;
+}
+
+.tech-card p{
+font-size:16px;
+font-weight:600;
+}
+
+.tech-card:hover{
+transform:scale(1.1);
+}
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.fitag-container{
+padding:40px 20px;
+}
+
+.fitag-title{
+font-size:36px;
+}
+
+.fitag-section h2{
+font-size:24px;
+}
+
+.gallery-scroll img{
+width:260px;
+height:170px;
+}
+
+}

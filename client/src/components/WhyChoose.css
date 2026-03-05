@@ -1,12 +1,12 @@
 /* Why Choose Section */
-.why-choose-section {
+.why-choose-sit {
   padding: 100px 0;
   background-color: #f5f7fa; /* soft background */
   color: #1f2937;
   overflow: hidden;
 }
 
-.why-choose-section .container {
+.why-choose-sit .container {
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -15,7 +15,7 @@
   padding: 0 20px;
 }
 
-.section-heading {
+.sit-heading {
   font-size: 36px;
   font-weight: 700;
   color: #000; /* black heading */
@@ -23,7 +23,7 @@
   margin-bottom: 15px;
 }
 
-.section-subtitle {
+.sit-subtitle {
   font-size: 16px;
   color: #4b5563;
   text-align: center;
@@ -90,11 +90,11 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .section-heading {
+  .sit-heading {
     font-size: 30px;
   }
 
-  .section-subtitle {
+  .sit-subtitle {
     font-size: 15px;
   }
 
@@ -112,11 +112,11 @@
     padding: 60px 20px;
   }
 
-  .section-heading {
+  .sit-heading {
     font-size: 26px;
   }
 
-  .section-subtitle {
+  .sit-subtitle {
     font-size: 14px;
   }
 

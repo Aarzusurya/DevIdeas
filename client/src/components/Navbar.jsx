@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation  } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -95,18 +95,6 @@ function Navbar() {
               }
             >
               Case Studies
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/blog"
-              onClick={handleCloseMenu}
-              className={({ isActive }) =>
-                isActive ? "active-link" : ""
-              }
-            >
-              Blog
             </NavLink>
           </li>
 

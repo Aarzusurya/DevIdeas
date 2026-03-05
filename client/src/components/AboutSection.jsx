@@ -13,12 +13,12 @@ function AboutSection() {
   };
 
   return (
-    <section className="about-section">
-      <div className="container about-content">
+    <section className="flop-section">
+      <div className="container flop-content">
 
         {/* Top Section */}
-        <div className="about-top">
-          <div className="about-text">
+        <div className="flop-top">
+          <div className="flop-text">
             <h2>Website and Mobile App Development In India</h2>
             <p>
               Are you searching for a reliable mobile app development company in Ahmedabad? 
@@ -29,17 +29,17 @@ function AboutSection() {
               Hire Top Development Agency in Ahmedabad Now
             </button>
           </div>
-          <div className="about-image">
+          <div className="flop-image">
             <img src={devImg} alt="Development" />
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="about-bottom">
-          <div className="about-image">
+        <div className="flop-bottom">
+          <div className="flop-image">
             <img src={growthImg} alt="Growth" />
           </div>
-          <div className="about-text">
+          <div className="flop-text">
             <h2>We Develop, Design, Grow, and Prosper</h2>
             <p>
               At AppAspect, a leading mobile app and web development company in Ahmedabad, 

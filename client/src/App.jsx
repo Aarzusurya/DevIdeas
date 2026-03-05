@@ -28,6 +28,27 @@ import MultiSocial from "./pages/MultiSocial";
 import PeriodsPage from "./pages/PeriodsPage";
 import PlayPage from "./pages/PlayPage";
 import BodyPage from "./pages/Bodypage";
+import RANFleet from "./pages/RANFleet";
+import Tommy from "./pages/Tommy";
+import NullcomPage from "./pages/NullcomPage";
+import Heliosphere from "./pages/Heliosphere";
+import HisablyPage from "./pages/HisablyPage";
+
+
+import CaseStudies from "./pages/CaseStudies";
+import FitAgPage from "./pages/FitAgpage";
+import SelfHealthCarePage from "./pages/SelfHealthCarePage";
+import LifeIXPage from "./pages/LifeIXPage";
+import SikhWorldAppPage from "./pages/sikhWorldAppPage";
+import UltimateNotepadPage from "./pages/UltimateNotepadPage";
+import AppzCreativePage from "./pages/AppzCreativePage";
+
+import AboutUsPage from "./pages/AboutUsPage";
+
+
+
+
+
 function HomePage() {
   return (
     <>
@@ -54,25 +75,45 @@ function App() {
         {/* Home */}
         <Route path="/" element={<HomePage />} />
 
-        {/* Services Page (NEW) */}
+        {/* Services */}
         <Route path="/services" element={<ExpertiseSection />} />
 
         {/* Quote */}
         <Route path="/quote" element={<QuotePage />} />
 
+        {/* Portfolio */}
         <Route path="/portfolio/apps" element={<AppsPortfolio />} />
-<Route path="/portfolio/websites" element={<WebsitesPortfolio />} />
+        <Route path="/portfolio/websites" element={<WebsitesPortfolio />} />
 
-<Route path="/multi-social" element={<MultiSocial />} />
-<Route path="/periods" element={<PeriodsPage />} />
-<Route path="/play-diary" element={<PlayPage />} />
-<Route path="/body-care-love" element={<BodyPage />} />
+        {/* App Portfolio Pages */}
+        <Route path="/multi-social" element={<MultiSocial />} />
+        <Route path="/periods" element={<PeriodsPage />} />
+        <Route path="/play-diary" element={<PlayPage />} />
+        <Route path="/body-care-love" element={<BodyPage />} />
+
+        {/* ✅ IMPORTANT FIXED ROUTE */}
+        <Route path="/ranfleet" element={<RANFleet />} />
+        <Route path="/tommy" element={<Tommy />} />
+        <Route path="/nextpage" element={<div style={{padding:"120px"}}>Next Page</div>} />
+        <Route path="/nullcom" element={<NullcomPage />} />
+        <Route path="/heliosphere" element={<Heliosphere />} />
+        <Route path="/hisably" element={<HisablyPage />} />
+
+
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/fitag" element={<FitAgPage />} />
+        <Route path="/self-health-care" element={<SelfHealthCarePage />} />
+        <Route path="/lifeix" element={<LifeIXPage />} />
+        <Route path="/sikh-world" element={<SikhWorldAppPage />} />
+        <Route path="/ultimate-notepad" element={<UltimateNotepadPage />} />
+        <Route path="/appzcreative" element={<AppzCreativePage />} />
+
+      <Route path="/about" element={<AboutUsPage />} />
+
 
         {/* AI Pages */}
         <Route path="/ai" element={<AI />} />
         <Route path="/customai" element={<CustomAI />} />
-
-        <Route path="/periods" element={<PeriodsPage />} />
 
         {/* App Development Pages */}
         <Route
@@ -87,7 +128,6 @@ function App() {
           path="/flutter-app-development"
           element={<FlutterAppDevelopment />}
         />
-
       </Routes>
 
       <CTASection />

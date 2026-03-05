@@ -1,0 +1,121 @@
+.health-container{
+padding:60px 10%;
+background:#0d6efd;
+color:white;
+min-height:100vh;
+}
+
+/* TITLE */
+
+.health-title{
+font-size:50px;
+font-weight:700;
+text-align:center;
+margin-bottom:50px;
+color: white;
+}
+
+/* SECTION */
+
+.health-section{
+margin-bottom:60px;
+}
+
+.health-section h2{
+font-size:28px;
+margin-bottom:15px;
+color:white;
+}
+
+.health-section p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:15px;
+color:#e5e7eb;
+}
+
+/* IMAGE GALLERY */
+
+.health-gallery{
+margin:40px 0;
+}
+
+/* GRID RESPONSIVE */
+
+.health-scroll{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+/* IMAGE */
+
+.health-scroll img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:12px;
+transition:0.3s;
+}
+
+.health-scroll img:hover{
+transform:scale(1.05);
+}
+
+/* PROCESS LIST */
+
+.Health-list{
+line-height:1.8;
+padding-left:20px;
+font-size:16px;
+}
+
+/* TECHNOLOGY STACK */
+
+.health-stack{
+text-align:center;
+margin-top:80px;
+}
+
+.health-icons{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.health-card img{
+width:60px;
+margin-bottom:10px;
+}
+
+.health-card{
+transition:0.3s;
+}
+
+.health-card:hover{
+transform:scale(1.1);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+.health-title{
+font-size:32px;
+}
+
+.health-scroll{
+grid-template-columns:1fr;
+}
+
+.health-scroll img{
+height:180px;
+}
+
+.health-icons{
+gap:25px;
+}
+
+}

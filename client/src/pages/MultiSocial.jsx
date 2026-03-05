@@ -8,7 +8,7 @@ function MultiSocial() {
 
       {/* HERO SECTION */}
       <section className="multi-smart">
-        <div className="multi-hero-content">
+        <div className="multi-smart-content">
 
           <div className="multi-smart-text">
             <h1>Dual Accounts - Multi Social</h1>

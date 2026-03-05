@@ -8,8 +8,8 @@ function PlayPage() {
     <div className="play-wrapper">
 
       {/* HERO SECTION */}
-      <section className="play-hero">
-        <div className="play-hero-content">
+      <section className="play-game">
+        <div className="play-game-content">
 
           <div className="play-text">
             <h1>Just Play Diary</h1>
@@ -84,11 +84,11 @@ function PlayPage() {
       <div className="page-navigation">
 
         <Link to="/periods">
-          <button className="nav-btn secondary">← Previous</button>
+          <button className="navio-btn secondary">← Previous</button>
         </Link>
 
     <Link to="/body-care-love">
-          <button className="nav-btn">Next →</button>
+          <button className="navio-btn">Next →</button>
         </Link>
 
       </div>

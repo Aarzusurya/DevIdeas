@@ -8,8 +8,8 @@ function PeriodsPage() {
     <div className="period-wrapper">
 
       {/* HERO SECTION */}
-      <section className="period-hero">
-        <div className="period-hero-content">
+      <section className="period-pain">
+        <div className="period-pain-content">
 
           <div className="period-text">
             <h1>My Period Tracker</h1>
@@ -99,11 +99,11 @@ function PeriodsPage() {
       <div className="page-navigation">
 
         <Link to="/multi-social">
-          <button className="nav-btn secondary">← Previous</button>
+          <button className="navu-btn secondary">← Previous</button>
         </Link>
 
         <Link to="/play-diary">
-          <button className="nav-btn">Next →</button>
+          <button className="navu-btn">Next →</button>
         </Link>
 
       </div>

@@ -44,10 +44,10 @@ function WhyChoose() {
   return (
     <section className="why-choose-section">
       <div className="container">
-        <h2 className="section-heading">
+        <h2 className="sit-heading">
           Why Choose AppAspect for Mobile App & Web Development in Ahmedabad
         </h2>
-        <p className="section-subtitle">
+        <p className="sit-subtitle">
           As the leading mobile app development company in Ahmedabad, AppAspect offers end-to-end solutions for businesses of all sizes. Whether you need a user-friendly mobile application or a scalable web platform, our services are designed to help your business thrive in today's competitive market.
         </p>
 

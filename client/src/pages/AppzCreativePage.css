@@ -1,0 +1,142 @@
+.appz-container{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+  font-family: "Segoe UI", sans-serif;
+  color:white;
+}
+
+/* TITLE */
+
+.appz-title{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:40px;
+  color:#1a73e8;
+  font-weight:700;
+}
+
+/* SECTIONS */
+
+.appz-section{
+  margin-bottom:50px;
+}
+
+.appz-section h2{
+  font-size:28px;
+  margin-bottom:15px;
+  color:white;
+  border-left:5px solid #1a73e8;
+  padding-left:10px;
+}
+
+.appz-section p{
+  font-size:16px;
+  line-height:1.8;
+  margin-bottom:12px;
+}
+
+/* LIST */
+
+.appz-list{
+  padding-left:20px;
+}
+
+.appz-list li{
+  margin-bottom:12px;
+  line-height:1.6;
+}
+
+/* IMAGE GALLERY */
+
+.appz-gallery{
+  margin:40px 0;
+}
+
+.appz-scroll{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  padding-bottom:10px;
+}
+
+.appz-scroll img{
+  width:300px;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:transform 0.3s;
+}
+
+.appz-scroll img:hover{
+  transform:scale(1.05);
+}
+
+/* TECHNOLOGY STACK */
+
+.appz-stack{
+  margin-top:50px;
+}
+
+.appz-stack h2{
+  font-size:28px;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.appz-icons{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
+
+/* TECH CARD */
+
+.appz-card{
+  background:white;
+  border-radius:10px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:all 0.3s ease;
+  color: black;
+}
+
+.appz-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.appz-card img{
+  width:50px;
+  height:50px;
+  margin-bottom:10px;
+}
+
+.appz-card p{
+  font-weight:600;
+  font-size:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.appz-container{
+padding:30px;
+}
+
+.appz-title{
+font-size:32px;
+}
+
+.appz-scroll img{
+width:220px;
+}
+
+.appz-icons{
+gap:30px;
+}
+
+}

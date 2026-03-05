@@ -4,13 +4,13 @@
 
 /* HERO */
 
-.play-hero {
+.play-game{
   background: linear-gradient(135deg, #0d6efd, #0056d2);
   color: white;
   padding: 100px 8%;
 }
 
-.play-hero-content {
+.play-game-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +108,7 @@
   background: #f8fafc;
 }
 
-.nav-btn {
+.navio-btn {
   padding: 12px 28px;
   border: none;
   border-radius: 8px;
@@ -119,17 +119,17 @@
   transition: all 0.3s ease;
 }
 
-.nav-btn:hover {
-  background: linear-gradient(135deg, #0d6efd, blue);
+.navio-btn:hover {
+  background: black;
   transform: translateY(-4px);
 }
 
-.nav-btn.secondary {
-  background: linear-gradient(135deg, #ff6b9d, #ff4d88);
+.navio-btn.secondary {
+  background: linear-gradient(135deg, #0d6efd, #0d6efd,);
 }
 
-.nav-btn.secondary:hover {
-  background: linear-gradient(135deg, #0d6efd, #0056d2);
+.navio-btn.secondary:hover {
+  background: #ff6b9d;
 }
 
 /* RESPONSIVE */
@@ -139,7 +139,7 @@
     font-size: 32px;
   }
 
-  .play-hero-content {
+  .play-game-content {
     flex-direction: column;
     text-align: center;
   }

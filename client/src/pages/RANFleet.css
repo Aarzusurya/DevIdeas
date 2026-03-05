@@ -1,0 +1,223 @@
+/* ================= WRAPPER ================= */
+.ran-wop {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= HERO SECTION ================= */
+.ran-car {
+  padding: 100px 8%;
+  background: #0d6efd;
+  color: white;
+}
+
+.ran-car-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ran-text {
+  flex: 1;
+}
+
+.ran-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.ran-text p {
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-size: 17px;
+  opacity: 0.95;
+}
+
+/* ================= HERO IMAGE ================= */
+.ran-image {
+  flex: 1;
+  text-align: center;
+}
+
+.ran-image img {
+  width: 280px;
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ================= FEATURES SECTION ================= */
+.ran-features {
+  padding: 100px 8%;
+  text-align: center;
+  background: #f4f7fa;
+}
+
+.ran-features h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.ran-sub {
+  margin-bottom: 60px;
+  color: black;
+  font-size: 16px;
+}
+
+/* ================= GRID ================= */
+.ran-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= FEATURE CARD ================= */
+.ran-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.ran-card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+}
+
+.ran-icon {
+  font-size: 42px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.ran-card:hover .ran-icon {
+  transform: scale(1.2);
+}
+
+.ran-card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #111;
+}
+
+.ran-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
+
+/* ================= PAGE NAVIGATION ================= */
+.page-navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  margin: auto;
+}
+
+.navo-btn {
+  padding: 14px 32px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navo-btn:hover {
+  background: #c41212;
+  transform: scale(1.08);
+}
+
+.navo-btn.secondary {
+  background: #0d6efd;
+}
+
+.navo-btn.secondary:hover {
+  background: black;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .ran-car-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .ran-text h1 {
+    font-size: 36px;
+  }
+
+  .ran-image img {
+    width: 220px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .ran-car {
+    padding: 70px 6%;
+  }
+
+  .ran-text h1 {
+    font-size: 28px;
+  }
+
+  .ran-text p {
+    font-size: 14px;
+  }
+
+  .ran-features {
+    padding: 70px 6%;
+  }
+
+  .ran-features h2 {
+    font-size: 28px;
+  }
+
+  .ran-sub {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .ran-card {
+    padding: 25px 20px;
+  }
+
+  .ran-icon {
+    font-size: 36px;
+  }
+
+  .page-navigation {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navo-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}

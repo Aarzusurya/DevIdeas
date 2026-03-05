@@ -1,0 +1,61 @@
+.caseStudiesPage{
+padding:60px 8%;
+background:#f7f9fc;
+min-height:100vh;
+}
+
+.caseTitle{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#111;
+}
+
+.caseGrid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.caseCard{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.caseCard:hover{
+transform:translateY(-8px);
+}
+
+.caseCard img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.caseCard h3{
+padding:20px 20px 10px;
+font-size:22px;
+}
+
+.caseCard p{
+padding:0 20px 20px;
+font-size:14px;
+color:#555;
+}
+
+.readBtn{
+margin:0 20px 20px;
+padding:10px 20px;
+border:none;
+background:#0d6efd;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.readBtn:hover{
+background:black;
+}

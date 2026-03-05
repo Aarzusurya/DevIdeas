@@ -73,7 +73,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2026 TechVertex. All Rights Reserved.
+      © 2026 appAspect. All Rights Reserved.
       </div>
 
     </footer>

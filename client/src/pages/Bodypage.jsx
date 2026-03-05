@@ -8,8 +8,8 @@ function BodyPage() {
     <div className="body-wrapper">
 
       {/* HERO SECTION */}
-      <section className="body-hero">
-        <div className="body-hero-content">
+      <section className="body-health">
+        <div className="body-health-content">
 
           <div className="body-text">
             <h1>BodyCareLove</h1>
@@ -89,11 +89,11 @@ function BodyPage() {
       <div className="page-navigation">
 
         <Link to="/play-diary">
-          <button className="nav-btn secondary">← Previous</button>
+          <button className="navy-btn secondary">← Previous</button>
         </Link>
 
-        <Link to="/ran-app">
-          <button className="nav-btn">Next →</button>
+        <Link to="/ranfleet">
+          <button className="navy-btn">Next →</button>
         </Link>
 
       </div>
