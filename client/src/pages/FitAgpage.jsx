@@ -1,5 +1,5 @@
 import React from "react";
-import "./FitAgPage.css";
+import "./FitAgpage.css";
 
 const FitAgPage = () => {
   return (
