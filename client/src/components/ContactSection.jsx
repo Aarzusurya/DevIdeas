@@ -29,7 +29,7 @@ function ContactSection() {
 
           <p><strong>India:</strong> +91 96876 90810</p>
           <p><strong>Germany:</strong> +49 151 42424417</p>
-          <p><strong>Email:</strong> InfoTechVertex@gmail.com
+          <p><strong>Email:</strong> info@appaspect.com
           </p>
 
           <p >
