@@ -4,6 +4,7 @@
   color: #1f2937;
 }
 
+/* Section Title */
 .section-title {
   text-align: center;
   font-size: 40px;
@@ -23,32 +24,38 @@
   border-radius: 10px;
 }
 
+/* Cards Layout */
 .expertise-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
 }
 
+/* Card */
 .expertise-card {
-  flex: 1 1 calc(25% - 30px);
+  flex: 1 1 300px;
+  max-width: 360px;
   background: #ffffff;
   border-radius: 20px;
   padding: 45px 30px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.06);
   text-align: center;
-  transition: all 0.4s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
   cursor: pointer;
+
+  /* 🔥 GPU render for smoother animation */
+  will-change: transform;
 }
 
-/* 🔥 Card Hover */
+/* Hover */
 .expertise-card:hover {
   background: #0d6efd;
-  transform: translateY(-12px);
+  transform: translateY(-10px);
   box-shadow: 0 30px 70px rgba(13,110,253,0.35);
 }
 
-/* ✅ Bigger & Attractive Image */
+/* Image Container */
 .card-img {
   background: linear-gradient(135deg, #eaf2ff, #f5f9ff);
   width: 150px;
@@ -58,12 +65,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* prevents layout shift */
+  overflow: hidden;
 }
 
+/* Image */
 .card-img img {
   width: 100px;
   height: 100px;
   object-fit: contain;
+
+  /* 🔥 image fast render */
+  display: block;
+  image-rendering: auto;
+
+  /* smooth hover animation */
+  transition: transform 0.35s ease;
+}
+
+/* image hover effect */
+.expertise-card:hover .card-img img {
+  transform: scale(1.08);
 }
 
 /* Title */
@@ -84,7 +107,7 @@
   transition: color 0.3s ease;
 }
 
-/* 🔥 White text on hover */
+/* White text on hover */
 .expertise-card:hover .card-title,
 .expertise-card:hover .card-desc {
   color: #ffffff;
@@ -107,25 +130,49 @@
   color: #0d6efd;
 }
 
-/* Responsive */
+/* Tablet */
 @media (max-width: 1024px) {
-  .expertise-card {
-    flex: 1 1 calc(50% - 20px);
-  }
-}
-
-@media (max-width: 640px) {
   .expertise-cards {
-    flex-direction: column;
-    align-items: center;
     gap: 30px;
   }
 
   .expertise-card {
-    flex: 1 1 100%;
+    flex: 1 1 45%;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 34px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+
+  .expertise-section {
+    padding: 80px 20px;
+  }
+
+  .expertise-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expertise-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .card-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-img img {
+    width: 80px;
+    height: 80px;
   }
 }

@@ -10,27 +10,44 @@ import agent from "../assets/agent.png";
 import agent1 from "../assets/agent1.png";
 import agent2 from "../assets/agent2.png";
 
-// Image arrays
+/* Image arrays */
 const aiImages = [ai, ai1, ai2];
 const agentImages = [agent, agent1, agent2];
 
 function ExpertiseSection() {
+
   const [aiIdx, setAiIdx] = useState(0);
   const [agentIdx, setAgentIdx] = useState(0);
 
   const navigate = useNavigate();
 
-  // Auto image slider
+  /* 🔥 Preload Images for fast display */
   useEffect(() => {
+
+    const images = [...aiImages, ...agentImages];
+
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+
+  }, []);
+
+  /* 🔥 Auto Image Slider */
+  useEffect(() => {
+
     const interval = setInterval(() => {
+
       setAiIdx((prev) => (prev + 1) % aiImages.length);
       setAgentIdx((prev) => (prev + 1) % agentImages.length);
+
     }, 2000);
 
     return () => clearInterval(interval);
+
   }, []);
 
-  // Read More Button
+  /* Read More Navigation */
   const handleReadMore = (route) => {
     navigate(route);
   };
@@ -52,18 +69,39 @@ function ExpertiseSection() {
 
   return (
     <section className="expertise-section">
+
       <div className="container">
-        <h2 className="section-title">Our Expertise</h2>
+
+        <h2 className="section-title">
+          Our Expertise
+        </h2>
 
         <div className="expertise-cards">
+
           {expertiseData.map((item, index) => (
+
             <div key={index} className="expertise-card">
+
               <div className="card-img">
-                <img src={item.img} alt={item.title} />
+
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  loading="lazy"
+                  decoding="async"
+                  width="100"
+                  height="100"
+                />
+
               </div>
 
-              <h3 className="card-title">{item.title}</h3>
-              <p className="card-desc">{item.desc}</p>
+              <h3 className="card-title">
+                {item.title}
+              </h3>
+
+              <p className="card-desc">
+                {item.desc}
+              </p>
 
               <button
                 className="btn read-more"
@@ -71,10 +109,15 @@ function ExpertiseSection() {
               >
                 Read More
               </button>
+
             </div>
+
           ))}
+
         </div>
+
       </div>
+
     </section>
   );
 }

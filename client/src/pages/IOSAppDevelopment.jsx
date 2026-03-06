@@ -7,8 +7,8 @@ function IOSAppDevelopment() {
     <div className="ios-page">
 
       {/* ===== HERO SECTION ===== */}
-      <section className="ios-hero">
-        <div className="ios-hero-content">
+      <section className="ios-heropo">
+        <div className="ios-heropo-content">
 
           <div className="ios-image-wrapper">
             <img src={iosBanner} alt="iOS Development" />

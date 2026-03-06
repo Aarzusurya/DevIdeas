@@ -27,9 +27,7 @@ function ContactSection() {
         <div className="contact-info">
           <h2>Contact Us</h2>
 
-          <p><strong>India:</strong> +91 96876 90810</p>
-          <p><strong>Germany:</strong> +49 151 42424417</p>
-          <p><strong>Email:</strong> info@appaspect.com
+          <p><strong>Email:</strong> devideastudio@gmail.com
           </p>
 
           <p >

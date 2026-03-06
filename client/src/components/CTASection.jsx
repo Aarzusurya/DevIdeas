@@ -28,7 +28,7 @@ function CTASection() {
             <div className="phone-icon">
               <FaPhoneAlt />
             </div>
-            <span className="phone-number">+91 96876 90810</span>
+            <span className="phone-number">+91 xxxxxxxxxx</span>
           </div>
 
           <button 

@@ -22,7 +22,7 @@ function Hero() {
             competitors and generates a solid return on investment.
           </p>
 
-          {/*  Corrected Button */}
+          {/* CTA Button */}
           <Link to="/quote" className="btn1">
             Get a Quote
           </Link>
@@ -30,7 +30,15 @@ function Hero() {
 
         {/* Hero Image */}
         <div className="hero-image1">
-          <img src={heroImg} alt="hero" />
+          <img
+            src={heroImg}
+            alt="Mobile App Development"
+            className="hero-img"
+            width="600"
+            height="500"
+            loading="eager"
+            decoding="async"
+          />
         </div>
 
       </div>

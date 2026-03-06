@@ -1,164 +1,130 @@
-/* About Section */
-.flop-section {
-  padding: 100px 0;
-  background-color: #f9fafb; /* soft white background */
-  color: #1f2937;
-  overflow: hidden;
+.flop-section{
+  padding:130px 0;
+  background:#ffffff;
 }
 
-.flop-content {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
+.flop-content{
+  display:flex;
+  flex-direction:column;
+  gap:140px;
 }
 
-/* Top & Bottom Sections */
-.flop-top, .flop-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  flex-wrap: wrap;
+/* sections */
+
+.flop-top,
+.flop-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
 }
 
-/* Text Block */
-.flop-text {
-  flex: 1;
-  min-width: 300px;
-  opacity: 0;
-  transform: translateX(-60px);
-  animation: slideInLeft 1s forwards;
+/* text */
+
+.flop-text{
+  flex:1;
 }
 
-.flop-bottom .flop-text {
-  transform: translateX(60px);
-  animation: slideInRight 1s forwards;
+.mini-title{
+  color:#0d6efd;
+  font-weight:600;
+  font-size:14px;
+  letter-spacing:1px;
 }
 
-.flop-text h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #000000; /* Black heading */
+.flop-text h2{
+  font-size:40px;
+  font-weight:700;
+  margin:15px 0 20px;
 }
 
-.flop-text p {
-  font-size: 16px;
-  line-height: 1.9;
-  margin-bottom: 25px;
-  color: #4b5563;
+.flop-text p{
+  font-size:16px;
+  color:#555;
+  line-height:1.8;
+  margin-bottom:25px;
+  max-width:520px;
 }
 
-.flop-text .btn {
-  margin-top: 15px;
-  background: #0d6efd; /* Button color */
-  color: white;
-  padding: 14px 32px;
-  border-radius: 12px;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+/* features */
+
+.feature-list{
+  list-style:none;
+  padding:0;
+  margin-bottom:30px;
 }
 
-.flop-text .btn:hover {
-  background: #0956c3;
-  transform: translateY(-3px) scale(1.05);
+.feature-list li{
+  margin-bottom:10px;
+  font-size:15px;
+  color:#333;
 }
 
-/* Image Block */
-.flop-image {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-  transform: translateX(60px);
-  animation: slideInRight 1s forwards;
+/* image */
+
+.flop-image{
+  flex:1;
+  display:flex;
+  justify-content:center;
 }
 
-.flop-top .flop-image {
-  transform: translateX(60px);
-  animation: slideInRight 1s forwards;
+.flop-image img{
+  width:420px;
+  max-width:100%;
+  height:auto;
+  object-fit:contain;
+  border-radius:18px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.08);
+  transition:transform .4s ease;
 }
 
-.flop-bottom .flop-image {
-  transform: translateX(-60px);
-  animation: slideInLeft 1s forwards;
+.flop-image img:hover{
+  transform:translateY(-10px);
 }
 
-.flop-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 20px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.1);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+/* button */
+
+.btn{
+  padding:14px 34px;
+  background:#0d6efd;
+  border:none;
+  color:white;
+  border-radius:30px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
 }
 
-.flop-image img:hover {
-  transform: scale(1.07) translateY(-5px);
-  box-shadow: 0 35px 70px rgba(0,0,0,0.15);
+.btn:hover{
+  background:#084ec1;
 }
 
-/* Animations */
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* divider */
+
+.section-divider{
+  width:100%;
+  height:1px;
+  background:#eee;
 }
 
-@keyframes slideInRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+/* responsive */
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .flop-top, .flop-bottom {
-    flex-direction: column-reverse;
-    text-align: center;
-    gap: 40px;
+@media(max-width:992px){
+
+  .flop-top,
+  .flop-bottom{
+    flex-direction:column;
+    text-align:center;
+    gap:50px;
   }
 
-  .flop-image img {
-    max-width: 80%;
+  .flop-bottom{
+    flex-direction:column-reverse;
   }
 
-  .flop-text h2 {
-    font-size: 30px;
+  .flop-text p{
+    margin:auto;
+    margin-bottom:25px;
   }
 
-  .flop-text p {
-    font-size: 15px;
-  }
-
-  .flop-text .btn {
-    padding: 12px 28px;
-  }
-}
-
-@media (max-width: 640px) {
-  .flop-section {
-    padding: 60px 20px;
-  }
-
-  .flop-text h2 {
-    font-size: 26px;
-  }
-
-  .flop-text p {
-    font-size: 14px;
-  }
-
-  .flop-image img {
-    max-width: 100%;
-  }
-
-  .flop-text .btn {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
 }

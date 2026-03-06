@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero {
   padding: 80px 0;
-  background-color: #f9fafb; /* soft light background */
+  background-color: #f9fafb;
 }
 
 .hero-content {
@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  flex-wrap: wrap; /* responsive for smaller screens */
+  flex-wrap: wrap;
 }
 
 /* Hero Text Animations */
@@ -25,26 +25,26 @@
   font-size: 38px;
   line-height: 1.3;
   margin-bottom: 20px;
-  color:black;
-
+  color: black;
 }
 
 .hero-text1 p {
-    color:black;
- /* muted text */
+  color: black;
   margin-bottom: 30px;
   font-size: 16px;
 }
 
+/* Navbar Links */
 .nav-links li a {
-  text-decoration: none;   
-  color: inherit;          
-  cursor: pointer;         
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .nav-links li a:hover {
-  color: blue; 
+  color: blue;
 }
+
 /* Hero Button */
 .btn1 {
   background: #0d6efd;
@@ -53,7 +53,7 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: 500;
 }
 
@@ -62,7 +62,7 @@
   transform: translateY(-3px);
 }
 
-/* Hero Image Animations */
+/* Hero Image Container */
 .hero-image1 {
   flex: 1;
   min-width: 280px;
@@ -71,12 +71,21 @@
   animation: slideInRight 1s forwards;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+/* Optimized Image Loading */
 .hero-image1 img {
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
+  height: auto;
   border-radius: 12px;
+
+  /* Performance Optimization */
+  display: block;
+  object-fit: contain;
+  image-rendering: auto;
+
   transition: transform 0.3s ease;
 }
 
@@ -99,7 +108,21 @@
   }
 }
 
+/* Mobile Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Responsive Hero Section */
+@media (max-width: 992px) {
+  .hero-text1 h1 {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column-reverse;
@@ -114,11 +137,26 @@
     animation: fadeInUp 1s forwards;
     margin-bottom: 30px;
   }
+
+  .hero-text1 h1 {
+    font-size: 28px;
+  }
+
+  .hero-text1 p {
+    font-size: 15px;
+  }
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-text1 h1 {
+    font-size: 24px;
+  }
+
+  .hero-image1 img {
+    max-width: 100%;
   }
 }

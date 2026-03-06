@@ -1,0 +1,95 @@
+.webdev-container{
+width:100%;
+font-family:sans-serif;
+}
+
+/* HERO */
+
+.webdev-heroin{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 10%;
+background:#0d6efd;
+color:white;
+flex-wrap:wrap;
+}
+
+.webdev-left img{
+width:350px;
+}
+
+.webdev-right{
+max-width:600px;
+}
+
+.webdev-right h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.webdev-right p{
+line-height:1.6;
+margin-bottom:15px;
+}
+
+
+/* SERVICES */
+
+.seu-section{
+padding:80px 10%;
+background:#f8f9fa;
+text-align:center;
+}
+
+.seu-section h2{
+font-size:32px;
+margin-bottom:50px;
+}
+
+.seu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.seu-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.seu-card:hover{
+transform:translateY(-8px);
+}
+
+.seu-card h3{
+margin-bottom:10px;
+color:#0d6efd;
+}
+
+
+/* WHY SECTION */
+
+.whu-section{
+padding:80px 10%;
+text-align:center;
+background-color: white;
+}
+
+.whu-section h2{
+margin-bottom:30px;
+font-size:30px;
+}
+
+.whu-section ul{
+list-style:none;
+padding:0;
+}
+
+.whu-section li{
+margin:10px 0;
+font-size:18px;
+}

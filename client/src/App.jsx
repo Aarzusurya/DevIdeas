@@ -184,6 +184,9 @@ import UltimateNotepadPage from "./pages/UltimateNotepadPage";
 import AppzCreativePage from "./pages/AppzCreativePage";
 
 import AboutUsPage from "./pages/AboutUsPage";
+import MobileAppDevelopment from "./pages/MobileAppDevelopment";
+import WebsiteDevelopment from "./pages/WebsiteDevelopment";
+
 
 
 
@@ -255,6 +258,11 @@ function App() {
         <Route path="/sikh-world" element={<SikhWorldAppPage />} />
         <Route path="/ultimate-notepad" element={<UltimateNotepadPage />} />
         <Route path="/appzcreative" element={<AppzCreativePage />} />
+
+
+        <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
+                <Route path="/website-development" element={<WebsiteDevelopment />} />
+      
 
         {/* AI PAGES */}
         <Route path="/ai" element={<AI />} />

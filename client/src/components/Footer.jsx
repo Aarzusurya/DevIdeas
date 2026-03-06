@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import { 
   FaFacebookF, 
   FaInstagram, 
@@ -18,25 +19,47 @@ function Footer() {
         {/* Column 1 */}
         <div className="footer-column">
           <h3>Our Services</h3>
-          <ul>
-            <li>Mobile Application Development</li>
-            <li>Website Development</li>
-            <li>Woocommerce Development</li>
-            <li>Shopify Development</li>
+
+          <ul className="footer-links">
+            <li>
+              <Link to="/mobile-app-development">
+                Mobile Application Development
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/website-development">
+                Website Development
+              </Link>
+            </li>
           </ul>
         </div>
 
         {/* Column 2 */}
         <div className="footer-column">
           <h3>Hire Dedicated Developers</h3>
-          <ul>
-            <li>Hire iOS Developers</li>
-            <li>Hire PHP Developers</li>
-            <li>Hire Android Developers</li>
-            <li>Hire Website Designers</li>
-            <li>Hire WordPress Developers</li>
-            <li>Hire React Native Developers</li>
-            <li>Hire Laravel Developers</li>
+
+          <ul className="footer-links">
+
+            <li>
+              <Link to="/ios-app-development">
+                Hire iOS App Developers
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/android-app-development">
+                Hire Android Developers
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/flutter-app-development">
+                Hire Flutter Developers
+              </Link>
+            </li>
+
+
           </ul>
         </div>
 
@@ -46,17 +69,12 @@ function Footer() {
 
           <div className="contact-block">
             <h4>Sales</h4>
-            <p>sales@appaspect.com</p>
+            <p>devideastudio@gmail.com</p>
           </div>
 
           <div className="contact-block">
             <h4>Business</h4>
-            <p>info@appaspect.com</p>
-          </div>
-
-          <div className="contact-block">
-            <h4>Phone</h4>
-            <p>India: +91 96876 90810</p>
+            <p>devideastudio@gmail.com</p>
           </div>
         </div>
 
@@ -73,7 +91,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-      © 2026 appAspect. All Rights Reserved.
+        © 2026 appAspect. All Rights Reserved.
       </div>
 
     </footer>

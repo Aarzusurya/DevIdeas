@@ -612,3 +612,17 @@
     font-size: 26px;
   }
 }
+
+/* Portfolio Image */
+
+.portfolio-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  transition: 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.05);
+}

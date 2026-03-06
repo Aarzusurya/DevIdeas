@@ -1,8 +1,8 @@
 .footer {
-  background: transparent;   /* Transparent */
+  background: transparent;
   color: #fff;
   padding: 80px 0 30px 0;
-  backdrop-filter: blur(6px);  /* subtle glass feel */
+  backdrop-filter: blur(6px);
 }
 
 /* Container */
@@ -28,7 +28,7 @@
   position: relative;
 }
 
-/* Underline effect on heading */
+/* heading underline */
 .footer-column h3::after {
   content: "";
   width: 40px;
@@ -41,19 +41,31 @@
 }
 
 /* List */
-.footer-column ul {
+.footer-links {
   list-style: none;
   padding: 0;
 }
 
-.footer-column ul li {
+.footer-links li {
   margin-bottom: 12px;
-  cursor: pointer;
   transition: 0.3s ease;
 }
 
-.footer-column ul li:hover {
-  color: #0d6efd;/* gold hover */
+/* LINKS STYLE */
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* visited color remove */
+.footer-links a:visited {
+  color: #fff;
+}
+
+/* hover effect */
+.footer-links li:hover a {
+  color: #0d6efd;
   transform: translateX(6px);
 }
 
@@ -93,7 +105,7 @@
   height: 48px;
   margin: 0 8px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.2); /* transparent circle */
+  background: rgba(255,255,255,0.2);
   color: #fff;
   font-size: 18px;
   transition: all 0.3s ease;
@@ -106,7 +118,7 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Bottom Text */
+/* Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 35px;
