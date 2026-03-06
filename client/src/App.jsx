@@ -179,7 +179,7 @@ import CaseStudies from "./pages/CaseStudies";
 import FitAgPage from "./pages/FitAgpage";
 import SelfHealthCarePage from "./pages/SelfHealthCarePage";
 import LifeIXPage from "./pages/LifeIXPage";
-import SikhWorldAppPage from "./pages/sikhWorldAppPage";
+import SikhWorldAppPage from "./pages/SikhWorldAppPage";
 import UltimateNotepadPage from "./pages/UltimateNotepadPage";
 import AppzCreativePage from "./pages/AppzCreativePage";
 
