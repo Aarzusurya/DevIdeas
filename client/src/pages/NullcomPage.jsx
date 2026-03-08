@@ -1,11 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import nullcomImg from "../assets/nullcom-app.png"; // image add kar lena
 import "./NullcomPage.css";
 
 function NullcomPage() {
 
   const navigate = useNavigate();
+
+  // Image path from public folder
+  const nullcomImg = "/images/nullcom-app.png"; // public/images folder me rakho
 
   return (
     <div className="null-wrapper">
@@ -15,7 +17,7 @@ function NullcomPage() {
         <div className="null-rap-content">
 
           <div className="null-image">
-            <img src={nullcomImg} alt="Nullcom App" />
+            <img src={nullcomImg} alt="Nullcom App" loading="lazy" />
           </div>
 
           <div className="null-text">
@@ -95,7 +97,7 @@ function NullcomPage() {
           className="navp-btn"
           onClick={() => navigate("/hisably")}
         >
-          Next →
+          Next → 
         </button>
 
       </div>

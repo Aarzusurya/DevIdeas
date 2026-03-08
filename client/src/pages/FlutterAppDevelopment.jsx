@@ -1,22 +1,6 @@
 import React from "react";
 import "./FlutterAppDevelopment.css";
 
-/* HERO IMAGE */
-import flutterImg from "../assets/flutter.png";
-
-/* TRANSFORM SECTION IMAGES */
-import performanceImg from "../assets/performance.png";
-import designImg from "../assets/design.png";
-import scalableImg from "../assets/scalable.png";
-import costImg from "../assets/cost.png";
-
-/* SERVICES SECTION IMAGES */
-import service1 from "../assets/crossplatform.png";
-import service2 from "../assets/ml.png";
-import service3 from "../assets/uiux.png";
-import service4 from "../assets/realtime.png";
-import service5 from "../assets/iot.png";
-import service6 from "../assets/qa.png";
 
 // Cards data for Why Choose AppAspect
 const whyChooseData = [
@@ -89,9 +73,10 @@ Got a unique use case? We'll tailor every element of your Flutter app to fit you
 const FlutterAppDevelopment = () => {
   return (
     <>
-      {/* ===== HERO SECTION ===== */}
+      {/* HERO */}
       <section className="flutter-hero">
         <div className="hero-container">
+
           <div className="hero-text">
             <h1>Flutter App Development Company in India</h1>
             <p>
@@ -102,24 +87,26 @@ const FlutterAppDevelopment = () => {
               At AppAspect, a trusted Flutter app development company in India,
               we build cross-platform mobile apps that are visually stunning,
               blazing fast, and engineered to scale.
-              Whether you're based in Ahmedabad or reaching users across India,
-              we help you build apps that don't just work — they win.
             </p>
           </div>
+
           <div className="hero-image">
-            <img src={flutterImg} alt="Flutter App Development" />
+            <img
+              src="/images/flutter.png"
+              alt="Flutter App Development"
+              loading="eager"
+            />
           </div>
+
         </div>
       </section>
 
-      {/* ===== WHY FLUTTER SECTION ===== */}
+      {/* WHY FLUTTER */}
       <section className="flutter-why">
         <div className="container">
+
           <h2>Why Flutter? Why Now?</h2>
-          <p className="why-intro">
-            Flutter is more than a framework — it's a revolution in mobile app development.
-            Here's why companies across India are switching to Flutter:
-          </p>
+
           <ul className="why-list">
             <li>Single codebase for iOS & Android</li>
             <li>Hot reload for real-time changes</li>
@@ -129,125 +116,133 @@ const FlutterAppDevelopment = () => {
             <li>Built for AI/ML: Add smart features seamlessly</li>
             <li>Lower Costs: One team, one codebase, double the value</li>
           </ul>
-          <p className="why-bottom">
-            Flutter cuts dev time, reduces bugs, and gives you a competitive edge —
-            without breaking the bank.
-          </p>
+
         </div>
       </section>
 
-      {/* ===== TRANSFORM SECTION ===== */}
+      {/* TRANSFORM */}
       <section className="flutter-transform">
         <div className="container">
+
           <h2>
             Transform Your Mobile App with Flutter Development Company in Ahmedabad
           </h2>
-          <p className="transform-intro">
-            If you're navigating the complexities of app development, Flutter offers a vibrant solution that simplifies your journey.
-            As a leading Flutter development company in Ahmedabad, we build apps that are:
-          </p>
+
           <div className="transform-cards">
+
             <div className="transform-card">
-              <img src={performanceImg} alt="High Performance" />
+              <img src="/images/performance.png" alt="Performance" loading="lazy"/>
               <h3>Performance-driven</h3>
             </div>
+
             <div className="transform-card">
-              <img src={designImg} alt="Visually Stunning" />
+              <img src="/images/design.png" alt="Design" loading="lazy"/>
               <h3>Cross-platform</h3>
             </div>
+
             <div className="transform-card">
-              <img src={scalableImg} alt="Scalable & Secure" />
+              <img src="/images/scalable.png" alt="Scalable" loading="lazy"/>
               <h3>Purpose-built for your audience</h3>
             </div>
+
             <div className="transform-card">
-              <img src={costImg} alt="Cost Efficient" />
+              <img src="/images/cost.png" alt="Cost Efficient" loading="lazy"/>
               <h3>AI-enhanced</h3>
             </div>
+
           </div>
+
         </div>
-        <p className="transform-bottom-line">
-          From idea to launch - we craft every app like a symphony of speed, usability, and innovation.
-        </p>
       </section>
 
-      {/* ===== SERVICES SECTION ===== */}
+      {/* SERVICES */}
       <section className="flutter-poll">
         <div className="container">
+
           <h2>Our Flutter App Development Services Include</h2>
+
           <div className="poll-grid">
+
             <div className="poll-card">
-              <img src={service1} alt="Cross Platform" />
+              <img src="/images/crossplatform.png" alt="Cross Platform" loading="lazy"/>
               <h3>Cross-Platform App Development</h3>
             </div>
+
             <div className="poll-card">
-              <img src={service2} alt="Machine Learning" />
+              <img src="/images/ml.png" alt="Machine Learning" loading="lazy"/>
               <h3>Machine Learning Integration</h3>
             </div>
+
             <div className="poll-card">
-              <img src={service3} alt="UI UX Design" />
+              <img src="/images/uiux.png" alt="UI UX" loading="lazy"/>
               <h3>Flutter App UI/UX Design</h3>
             </div>
+
             <div className="poll-card">
-              <img src={service4} alt="Real Time Sync" />
+              <img src="/images/realtime.png" alt="Realtime Sync" loading="lazy"/>
               <h3>Real-Time Data Synchronization</h3>
             </div>
+
             <div className="poll-card">
-              <img src={service5} alt="IoT & Cloud" />
+              <img src="/images/iot.png" alt="IoT" loading="lazy"/>
               <h3>IoT and Cloud Integration</h3>
             </div>
+
             <div className="poll-card">
-              <img src={service6} alt="QA Testing" />
+              <img src="/images/qa.png" alt="QA Testing" loading="lazy"/>
               <h3>Rigorous Quality Testing & QA</h3>
             </div>
+
           </div>
-          <p className="poll-bottom-line">
-            Each service is designed to help your app scale smoothly while delivering a flawless user experience.
-          </p>
+
         </div>
       </section>
 
-      {/* ===== WHY CHOOSE APPASPECT SECTION (Styled Cards) ===== */}
-      <section className="why-choose-section py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">
+      {/* WHY CHOOSE */}
+      <section className="why-choose-section py-16">
+        <div className="container">
+
+          <h2 className="text-center">
             Why Choose AppAspect as Your Flutter App Development Company in India?
           </h2>
-          <p className="text-center mb-12 text-gray-700">
-            AppAspect doesn't just build apps - we build solutions that drive ROI.
-            Here's what sets us apart:
-          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid">
             {whyChooseData.map((card) => (
-              <div
-                key={card.id}
-                className="card bg-gradient-to-br from-white to-blue-100 rounded-xl p-6 text-center shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-500"
-              >
-                <h3 className="text-xl font-semibold mb-3 text-blue-800">{card.title}</h3>
-                <p className="text-gray-700">{card.description}</p>
+              <div key={card.id} className="card">
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
-      {/* ===== GUARANTEE & INDUSTRIES SECTION (2 Cards) ===== */}
-      <section className="guarantee-industries-section py-16 bg-gray-50">
+      {/* GUARANTEE */}
+      <section className="guarantee-industries-section py-16">
+
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <div className="grid">
+
             {guaranteeIndustriesData.map((card) => (
-              <div
-                key={card.id}
-                className="card bg-gradient-to-br from-white to-blue-100 rounded-xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-500"
-              >
-                <h3 className="text-xl font-semibold mb-3 text-blue-800">{card.title}</h3>
-                <p className="text-gray-700" style={{ whiteSpace: "pre-line" }}>
+
+              <div key={card.id} className="card">
+
+                <h3>{card.title}</h3>
+
+                <p style={{ whiteSpace: "pre-line" }}>
                   {card.description}
                 </p>
+
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       </section>
     </>
   );

@@ -1,11 +1,13 @@
 import React from "react";
-import fleetImg from "../assets/fleet-app.png";
 import "./RANFleet.css";
 import { useNavigate } from "react-router-dom";
 
 function RANFleet() {
 
   const navigate = useNavigate();
+
+  // Image from public folder
+  const fleetImg = "/images/fleet-app.png"; // public/images me rakho
 
   return (
     <div className="ran-wop">
@@ -37,7 +39,7 @@ function RANFleet() {
           </div>
 
           <div className="ran-image">
-            <img src={fleetImg} alt="RAN Fleet App" />
+            <img src={fleetImg} alt="RAN Fleet App" loading="lazy" />
           </div>
 
         </div>
@@ -105,7 +107,7 @@ function RANFleet() {
           className="navo-btn"
           onClick={() => navigate("/tommy")}
         >
-          Next →
+          Next → 
         </button>
 
       </div>

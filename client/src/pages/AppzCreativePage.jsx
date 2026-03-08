@@ -1,6 +1,8 @@
 import React from "react";
 import "./AppzCreativePage.css";
 
+
+
 const AppzCreativePage = () => {
   return (
     <div className="appz-container">

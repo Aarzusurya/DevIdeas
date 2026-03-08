@@ -1,11 +1,11 @@
 import React from "react";
-import tommyImg from "../assets/tommy-app.png"; // apni image yaha replace kar lena
 import "./Tommy.css";
 import { Link } from "react-router-dom";
 
-
 function Tommy() {
 
+  // Image from public folder
+  const tommyImg = "/images/tommy-app.png"; // public/images folder me rakho
 
   return (
     <div className="tommy-wrapper">
@@ -15,7 +15,7 @@ function Tommy() {
         <div className="tommy-tasty-content">
 
           <div className="tommy-image">
-            <img src={tommyImg} alt="Original Tommy's App" />
+            <img src={tommyImg} alt="Original Tommy's App" loading="lazy" />
           </div>
 
           <div className="tommy-text">
@@ -85,17 +85,17 @@ function Tommy() {
       </section>
 
       {/* ================= NAVIGATION ================= */}
-    <div className="page-navigation">
-     <Link to="/ranfleet">
-     <button className="navi-btn secondary">← Previous</button>
-     </Link>
+      <div className="page-navigation">
+        <Link to="/ranfleet">
+          <button className="navi-btn secondary">← Previous</button>
+        </Link>
 
-    <Link to="/nullcom">
-    <button className="navi-btn">Next →</button>
-     </Link>
-   </div>
-   </div>
-   );
-  }
+        <Link to="/nullcom">
+          <button className="navi-btn">Next →</button>
+        </Link>
+      </div>
+    </div>
+  );
+}
 
 export default Tommy;

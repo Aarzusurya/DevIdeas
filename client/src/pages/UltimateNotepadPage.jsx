@@ -1,6 +1,7 @@
 import React from "react";
 import "./UltimateNotepadPage.css";
 
+
 const UltimateNotepadPage = () => {
   return (
     <div className="note-container">

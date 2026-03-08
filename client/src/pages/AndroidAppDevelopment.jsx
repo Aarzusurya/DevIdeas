@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./AndroidAppDevelopment.css";
-import heroImage from "../assets/android-hero.png";
 
-/* portfolio images */
-import periodImg from "../assets/period-app.png";
-import bodyImg from "../assets/body-care.png";
-import ranImg from "../assets/ran-fleet.png";
 
 function AndroidAppDevelopment() {
   return (
@@ -16,7 +11,11 @@ function AndroidAppDevelopment() {
       <section className="android-hero">
         <div className="android-container">
 
-          <img src={heroImage} alt="Android Development" className="hero-image" />
+          <img
+            src="/images/android-hero.png"
+            alt="Android Development"
+            className="hero-image"
+          />
 
           <h1>
             Top Android App Development <br />
@@ -127,7 +126,7 @@ function AndroidAppDevelopment() {
             <div className="portfolio-card">
 
               <img
-                src={periodImg}
+                src="/images/period-app.png"
                 alt="My Period Tracker"
                 className="portfolio-image"
               />
@@ -153,7 +152,7 @@ function AndroidAppDevelopment() {
             <div className="portfolio-card">
 
               <img
-                src={bodyImg}
+                src="/images/body-care.png"
                 alt="Body Care Love"
                 className="portfolio-image"
               />
@@ -179,7 +178,7 @@ function AndroidAppDevelopment() {
             <div className="portfolio-card">
 
               <img
-                src={ranImg}
+                src="/images/ran-fleet.png"
                 alt="RAN Fleet"
                 className="portfolio-image"
               />

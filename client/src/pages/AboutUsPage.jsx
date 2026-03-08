@@ -160,6 +160,7 @@
 import React from "react";
 import "./AboutUsPage.css";
 
+
 function AboutUsPage() {
   return (
     <div className="about-container">
@@ -306,6 +307,7 @@ function AboutUsPage() {
         </div>
 
       </section>
+      
 
     </div>
   );

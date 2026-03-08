@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import "./CaseStudies.css";
 
+import fitag from "../assets/caseStudies/fitag.jpg";
+import selfhealth from "../assets/caseStudies/selfhealth.jpg";
+import lifeix from "../assets/caseStudies/body-care.png";
+import periodtracker from "../assets/caseStudies/period-app.png";
+import sikhworld from "../assets/caseStudies/ran-fleet.jpg";
+import notepad from "../assets/caseStudies/web13.jpg";
+import appzcreative from "../assets/caseStudies/web15.jpg";
+
 function CaseStudies() {
   return (
     <div className="caseStudiesPage">
@@ -11,10 +19,7 @@ function CaseStudies() {
 
         {/* CARD 1 */}
         <div className="caseCard">
-          <img
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
-            alt="FitAg"
-          />
+          <img src={fitag} alt="FitAg" />
 
           <h3>FitAg</h3>
 
@@ -25,17 +30,14 @@ function CaseStudies() {
           </p>
 
           <Link to="/fitag">
-         <button className="readBtn">Read More</button>
+            <button className="readBtn">Read More</button>
           </Link>
         </div>
 
 
         {/* CARD 2 */}
         <div className="caseCard">
-          <img
-            src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528"
-            alt="Self Health Care"
-          />
+          <img src={selfhealth} alt="Self Health Care" />
 
           <h3>Self Health Care</h3>
 
@@ -45,18 +47,15 @@ function CaseStudies() {
             fit and healthy.
           </p>
 
-          <Link to="/self-health-care">  
-         <button className="readBtn">Read More</button>
+          <Link to="/self-health-care">
+            <button className="readBtn">Read More</button>
           </Link>
         </div>
 
 
         {/* CARD 3 */}
         <div className="caseCard">
-          <img
-            src="https://images.unsplash.com/photo-1584515933487-779824d29309"
-            alt="LifeIX"
-          />
+          <img src={lifeix} alt="LifeIX" />
 
           <h3>LifeIX</h3>
 
@@ -67,17 +66,14 @@ function CaseStudies() {
           </p>
 
           <Link to="/lifeix">
-         <button className="readBtn">Read More</button>
-         </Link>
+            <button className="readBtn">Read More</button>
+          </Link>
         </div>
 
 
         {/* CARD 4 */}
         <div className="caseCard">
-          <img
-            src="https://images.unsplash.com/photo-1600959907703-125ba1374a12"
-            alt="My Period Tracker"
-          />
+          <img src={periodtracker} alt="My Period Tracker" />
 
           <h3>My Period Tracker</h3>
 
@@ -94,10 +90,7 @@ function CaseStudies() {
 
         {/* CARD 5 */}
         <div className="caseCard">
-          <img
-            src="https://images.unsplash.com/photo-1519817650390-64a93db51149"
-            alt="Sikh World App"
-          />
+          <img src={sikhworld} alt="Sikh World App" />
 
           <h3>Sikh World App</h3>
 
@@ -107,17 +100,14 @@ function CaseStudies() {
           </p>
 
           <Link to="/sikh-world">
-          <button className="readBtn">Read More</button>
+            <button className="readBtn">Read More</button>
           </Link>
         </div>
 
 
         {/* CARD 6 */}
         <div className="caseCard">
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-            alt="Ultimate Notepad"
-          />
+          <img src={notepad} alt="Ultimate Notepad" />
 
           <h3>Ultimate Notepad App</h3>
 
@@ -127,17 +117,14 @@ function CaseStudies() {
           </p>
 
           <Link to="/ultimate-notepad">
-<button className="readBtn">Read More</button>
-</Link>
+            <button className="readBtn">Read More</button>
+          </Link>
         </div>
 
 
         {/* CARD 7 */}
         <div className="caseCard">
-          <img
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692"
-            alt="AppzCreative"
-          />
+          <img src={appzcreative} alt="AppzCreative" />
 
           <h3>AppzCreative</h3>
 
@@ -148,11 +135,12 @@ function CaseStudies() {
           </p>
 
           <Link to="/appzcreative">
-<button className="readBtn">Read More</button>
-</Link>
+            <button className="readBtn">Read More</button>
+          </Link>
         </div>
 
       </div>
+
     </div>
   );
 }

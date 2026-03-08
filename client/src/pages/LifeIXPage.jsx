@@ -36,10 +36,10 @@ const LifeIXPage = () => {
 
         <div className="life-scroll">
 
-          <img src="https://images.unsplash.com/photo-1584515933487-779824d29309"/>
-          <img src="https://images.unsplash.com/photo-1576765608866-5b51046452be"/>
-          <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b"/>
-          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5"/>
+          <img src="/images/life1.jpg" alt="LifeIX 1" loading="lazy" />
+          <img src="/images/life2.jpg" alt="LifeIX 2" loading="lazy" />
+          <img src="/images/life3.jpg" alt="LifeIX 3" loading="lazy" />
+          <img src="/images/life4.jpg" alt="LifeIX 4" loading="lazy" />
 
         </div>
 
@@ -141,37 +141,37 @@ const LifeIXPage = () => {
         <div className="life-icons">
 
           <div className="life-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="Laravel"/>
             <p>Laravel</p>
           </div>
 
           <div className="life-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP"/>
             <p>PHP</p>
           </div>
 
           <div className="life-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML"/>
             <p>HTML</p>
           </div>
 
           <div className="life-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS"/>
             <p>CSS</p>
           </div>
 
           <div className="life-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Ads"/>
             <p>Google Ads</p>
           </div>
 
           <div className="life-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL"/>
             <p>MySQL</p>
           </div>
 
           <div className="life-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"/>
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"/>
             <p>JavaScript</p>
           </div>
 

@@ -1,8 +1,12 @@
 import React from "react";
-import website from "../assets/website.png";
 import "./WebsiteDevelopment.css";
 
+
 const WebsiteDevelopment = () => {
+
+  // Image from public folder
+  const websiteImg = "/images/website.png"; // public/images folder me rakho
+
   return (
     <div className="webdev-container">
 
@@ -10,7 +14,7 @@ const WebsiteDevelopment = () => {
       <div className="webdev-heroin">
 
         <div className="webdev-left">
-          <img src={website} alt="web development" />
+          <img src={websiteImg} alt="web development" loading="lazy" />
         </div>
 
         <div className="webdev-right">
@@ -32,7 +36,6 @@ const WebsiteDevelopment = () => {
       </div>
 
       {/* Service Section */}
-
       <div className="seu-section">
 
         <h2>AppAspect’s Web Development Services in India</h2>
@@ -107,9 +110,7 @@ const WebsiteDevelopment = () => {
 
       </div>
 
-
       {/* Why Choose Section */}
-
       <div className="whu-section">
 
         <h2>Why Brands Choose AppAspect</h2>

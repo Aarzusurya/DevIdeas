@@ -1,6 +1,7 @@
 import React from "react";
 import "./FitAgpage.css";
 
+
 const FitAgPage = () => {
   return (
     <div className="fitag-container">
