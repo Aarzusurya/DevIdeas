@@ -102,7 +102,7 @@ function QuotePage() {
             <h3>India Office</h3>
 
             <p>
-              <strong>Phone:</strong> +91 96876 90810
+              <strong>Phone:</strong> +91 xxxxxxxxxx
             </p>
 
             <p>
@@ -110,7 +110,7 @@ function QuotePage() {
             </p>
 
             <p>
-              <strong>Email:</strong> info@appaspect.com
+              <strong>Email:</strong> devideastudio@gmail.com
             </p>
 
             <p className="address">
