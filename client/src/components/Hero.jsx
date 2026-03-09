@@ -210,7 +210,7 @@ function Hero() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="KRS">
+      {/* <section className="KRS">
         <div className="container KRS-content">
           <div className="KRS-text1">
             <h1>Best Mobile App Development<br/>and Web Solutions in Ahmedabad</h1>
@@ -221,7 +221,126 @@ function Hero() {
             <img src="/images/hero.png" alt="Mobile App Development" className="KRS-img" width="600" height="500" loading="eager" decoding="async" fetchpriority="high"/>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* ================= HERO ================= */}
+<section className="KRS">
+  <div className="container KRS-content">
+
+    {/* LEFT CONTENT */}
+    <div className="KRS-text1">
+
+      <span className="hero-tag">
+         Trusted Mobile & Web Development Agency
+      </span>
+
+      <h1>
+        Best Mobile App Development <br />
+        and Web Solutions in Ahmedabad
+      </h1>
+
+      <p>
+        We help startups, businesses and enterprises build powerful
+        mobile apps and scalable web solutions using modern
+        technologies like React, Flutter, AI Automation and Cloud.
+        Our expert team delivers secure, high-performance products
+        that accelerate your digital growth.
+      </p>
+
+      {/* HERO BUTTONS */}
+      <div className="hero-buttons">
+
+        <Link to="/quote" className="btn1">
+          Get Free Quote
+        </Link>
+
+        <button
+          className="btn-outline"
+          onClick={() => navigate("/portfolio/apps")}
+        >
+          View Portfolio
+        </button>
+
+      </div>
+
+      {/* TRUST STATS */}
+      <div className="hero-stats">
+
+        <div className="hero-stat">
+          <h3>21+</h3>
+          <span>Projects Delivered</span>
+        </div>
+
+        <div className="hero-stat">
+          <h3>15+</h3>
+          <span>Happy Clients</span>
+        </div>
+
+        <div className="hero-stat">
+          <h3>3+</h3>
+          <span>Years Experience</span>
+        </div>
+
+      </div>
+
+      {/* FEATURE POINTS */}
+      <div className="hero-features">
+
+        <div className="hero-feature">
+          ✔ Custom Mobile App Development
+        </div>
+
+        <div className="hero-feature">
+          ✔ AI Automation & Smart Solutions
+        </div>
+
+        <div className="hero-feature">
+          ✔ Fast & Secure Web Platforms
+        </div>
+
+        <div className="hero-feature">
+          ✔ Scalable Cloud Architecture
+        </div>
+
+      </div>
+
+      <p className="hero-trust">
+         Trusted by startups and growing companies across India
+      </p>
+
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="KRS-image1">
+
+      <img
+        src="/images/hero.png"
+        alt="Mobile App Development"
+        className="KRS-img"
+        width="600"
+        height="500"
+        loading="eager"
+        decoding="async"
+        fetchPriority="high"
+      />
+
+      {/* FLOATING CARDS */}
+      <div className="hero-floating hero-float1">
+        <span> Fast Development</span>
+      </div>
+
+      <div className="hero-floating hero-float2">
+        <span>🤖 AI Powered Solutions</span>
+      </div>
+
+      <div className="hero-floating hero-float3">
+        <span>📱 Mobile + Web Apps</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* ================= ABOUT ================= */}
       <section className="flop-section">

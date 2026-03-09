@@ -1,287 +1,323 @@
 /* =========================
-   MAIN SECTION
+GLOBAL
 ========================= */
 
-.quote-section {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #e0f2fe, #eef2ff);
+.quote-section{
+  padding:100px 20px;
+  background:linear-gradient(135deg,#f8f9ff,#eef2ff);
+  display:flex;
+  justify-content:center;
 }
 
-.quote-container {
-  max-width: 1200px;
-  margin: auto;
-  color: #1e293b;
+.quote-container{
+  max-width:1200px;
+  width:100%;
 }
 
 /* =========================
-   HEADER
+HEADER
 ========================= */
 
-.quote-header {
-  text-align: center;
-  margin-bottom: 70px;
+.quote-header{
+  text-align:center;
+  margin-bottom:60px;
 }
 
-.quote-title {
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #0f172a;
+.quote-tag{
+  display:inline-block;
+  background:#eef2ff;
+  color:#4f46e5;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:14px;
+  margin-bottom:15px;
 }
 
-.quote-subtitle {
-  font-size: 20px;
-  color: #2563eb;
-  margin-bottom: 20px;
+.quote-title{
+  font-size:42px;
+  font-weight:700;
+  color:#111;
+  margin-bottom:10px;
+}
+
+.quote-subtitle{
+  font-size:24px;
+  color:#4f46e5;
+  margin-bottom:15px;
+}
+
+.quote-description{
+  max-width:700px;
+  margin:auto;
+  color:#666;
+  line-height:1.7;
+}
+
+.quote-highlight{
+  margin-top:10px;
+  font-weight:500;
+  color:#444;
 }
 
 /* =========================
-   TOP ROW
+TOP SECTION
 ========================= */
 
-.quote-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 120px;
-  align-items: start;
+.quote-top{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:40px;
+  margin-bottom:80px;
 }
 
 /* =========================
-   FORM
+FORM
 ========================= */
 
-.quote-form-wrapper {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.12);
-  transition: 0.3s ease;
+.quote-form-wrapper{
+  background:white;
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.08);
 }
 
-.quote-form {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+.quote-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.form-group{
+  display:flex;
+  flex-direction:column;
 }
 
-.form-group label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #1e3a8a;
+.form-group label{
+  font-size:14px;
+  margin-bottom:6px;
+  color:#555;
 }
 
 .form-group input,
-.form-group textarea {
-  padding: 14px 16px;
-  border-radius: 10px;
-  border: 1px solid #cbd5e1;
-  background: #f8fafc;
-  font-size: 14px;
-  transition: 0.3s ease;
-}
-
-.form-group textarea {
-  min-height: 120px;
-  resize: vertical;
+.form-group select,
+.form-group textarea{
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid #ddd;
+  font-size:14px;
+  transition:.3s;
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
-  border-color: #2563eb;
-  background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-  outline: none;
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:#4f46e5;
+  box-shadow:0 0 0 2px rgba(79,70,229,.15);
 }
 
-/* BUTTON */
-
-.submit-btn {
-  margin-top: 10px;
-  padding: 14px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #ffffff;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
+.form-group.full{
+  grid-column:span 2;
 }
 
-.submit-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.4);
+.submit-btn{
+  grid-column:span 2;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:.3s;
 }
 
-/* =========================
-   ✅ INDIA INFO CARD FIXED
-========================= */
-
-.office-info {
-  background: #ffffff;
-  padding: 30px 28px;           /* Reduced padding */
-  border-radius: 18px;
-  border-left: 4px solid #2563eb;
-  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.12);
-  max-width: 480px;             /* Prevent over-stretch */
-  width: 100%;
-  line-height: 1.7;             /* Proper text spacing */
-  transition: 0.3s ease;
-}
-
-.office-info:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.2);
-}
-
-.office-info h3 {
-  font-size: 20px;
-  margin-bottom: 18px;
-  color: #0f172a;
-}
-
-.office-info p {
-  font-size: 15px;              /* Increased readability */
-  margin-bottom: 12px;          /* Proper spacing */
-  color: #334155;
-}
-
-.office-info strong {
-  color: #1e3a8a;
-  font-weight: 600;
-}
-
-.address {
-  margin-top: 15px;
-  color: #475569;
-  font-size: 14px;
-  line-height: 1.8;
+.submit-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(79,70,229,.35);
 }
 
 /* =========================
-   BOTTOM ROW
+OFFICE INFO
 ========================= */
 
-.quote-bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+/* =========================
+OFFICE INFO (SIMPLE TEXT)
+========================= */
+
+.office-info{
+  padding:10px 5px;
+}
+
+.office-info h3{
+  font-size:24px;
+  margin-bottom:18px;
+  color:#111;
+}
+
+.office-info p{
+  font-size:15px;
+  color:#444;
+  margin-bottom:10px;
+  line-height:1.6;
+}
+
+.office-info strong{
+  color:#111;
+}
+
+.address{
+  margin-top:15px;
+  font-size:14px;
+  color:#555;
+  line-height:1.7;
+}
+
+/* stats */
+
+.office-stats{
+  display:flex;
+  gap:35px;
+  margin-top:25px;
+}
+
+.office-stats div{
+  text-align:left;
+}
+
+.office-stats h4{
+  font-size:22px;
+  color:#4f46e5;
+}
+
+.office-stats span{
+  font-size:13px;
+  color:#666;
+}
+/* =========================
+BOTTOM SECTION
+========================= */
+
+.quote-bottom{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
 }
 
 /* IMAGE */
 
-.image-box {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.15);
+.image-box img{
+  width:100%;
+  max-width:450px;
+  animation:float 6s ease-in-out infinite;
 }
 
-.image-box img {
-  width: 100%;
-  transition: 0.4s ease;
-}
+@keyframes float{
 
-.image-box:hover img {
-  transform: scale(1.05);
-}
+0%{transform:translateY(0px)}
+50%{transform:translateY(-12px)}
+100%{transform:translateY(0px)}
 
-/* SLIPS */
-
-.features-box {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.feature-item {
-  background: #ffffff;
-  padding: 20px 25px;
-  border-radius: 15px;
-  border-left: 4px solid #2563eb;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1);
-  opacity: 0;
-  transform: translateX(60px);
-  animation: slideFade 0.8s ease forwards;
-}
-
-.feature-item h3 {
-  margin-bottom: 6px;
-  color: #1e3a8a;
-}
-
-.feature-item p {
-  font-size: 14px;
-  color: #475569;
-}
-
-.feature-item:nth-child(1) { animation-delay: 0.2s; }
-.feature-item:nth-child(2) { animation-delay: 0.4s; }
-.feature-item:nth-child(3) { animation-delay: 0.6s; }
-.feature-item:nth-child(4) { animation-delay: 0.8s; }
-
-@keyframes slideFade {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.feature-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.25);
 }
 
 /* =========================
-   RESPONSIVE
+FEATURES
 ========================= */
 
-@media (max-width: 1024px) {
-  .quote-top,
-  .quote-bottom {
-    grid-template-columns: 1fr;
-  }
-
-  .office-info {
-    max-width: 100%;  /* Full width on tablet/mobile */
-  }
-
-  .quote-bottom {
-    gap: 40px;
-  }
+.features-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
 }
 
-@media (max-width: 768px) {
-  .quote-section {
-    padding: 70px 15px;
-  }
-
-  .quote-title {
-    font-size: 28px;
-  }
-
-  .quote-form-wrapper,
-  .office-info {
-    padding: 22px;
-  }
+.feature-item{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 6px 25px rgba(0,0,0,.08);
+  transition:.3s;
 }
 
-@media (max-width: 480px) {
-  .submit-btn {
-    width: 100%;
-  }
+.feature-item:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 35px rgba(0,0,0,.12);
+}
 
-  .office-info h3 {
-    font-size: 18px;
-  }
+.feature-item h3{
+  font-size:18px;
+  margin-bottom:8px;
+  color:#111;
+}
 
-  .office-info p {
-    font-size: 14px;
-  }
+.feature-item p{
+  font-size:14px;
+  color:#666;
+}
+
+/* =========================
+TRUST FOOTER
+========================= */
+
+.quote-trust{
+  text-align:center;
+  margin-top:70px;
+  font-size:15px;
+  color:#666;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width:900px){
+
+.quote-top{
+  grid-template-columns:1fr;
+}
+
+.quote-bottom{
+  grid-template-columns:1fr;
+}
+
+.quote-form{
+  grid-template-columns:1fr;
+}
+
+.form-group.full{
+  grid-column:span 1;
+}
+
+.submit-btn{
+  grid-column:span 1;
+}
+
+.features-box{
+  grid-template-columns:1fr;
+}
+
+.office-stats{
+  gap:20px;
+}
+
+}
+
+@media (max-width:500px){
+
+.quote-title{
+  font-size:32px;
+}
+
+.quote-subtitle{
+  font-size:20px;
+}
+
+.quote-section{
+  padding:70px 15px;
+}
+
+.quote-form-wrapper{
+  padding:25px;
+}
+
 }
